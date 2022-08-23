@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 function ContactForm() {
+  const [message, setMessage] = useState('');
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -15,6 +16,12 @@ function ContactForm() {
       .then(
         (result) => {
           console.log(result.text);
+          setMessage(
+            'Thanks! I will get back in touch with you soon! Have a great day!'
+          );
+          setTimeout(() => {
+            setMessage('');
+          }, 5000);
         },
         (error) => {
           console.log(error.text);
@@ -27,12 +34,13 @@ function ContactForm() {
     <section id="contact">
       <div className="contact-wrapper">
         <h1 className="contact-title">Get in touch</h1>
+        <span className="success-message">{message}</span>
         <div className="form-container">
           <form onSubmit={sendEmail}>
             <input
               type="text"
               name="name"
-              placeholder="Full Name"
+              placeholder="First Name"
               required
             ></input>
             <input

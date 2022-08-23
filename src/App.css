@@ -192,6 +192,10 @@ header {
   padding: 8em 2.5em;
 }
 
+.success-message {
+  font-weight: bold;
+}
+
 .contact-title {
   font-size: 3rem;
 }
