@@ -1,7 +1,6 @@
 import React from 'react';
 
 function Navbar({ show }) {
-  console.log(show);
   return (
     <header className={!show ? 'hidden' : ''}>
       <nav>
