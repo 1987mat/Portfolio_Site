@@ -1,38 +1,232 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  color: #282828;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background: rgb(11, 3, 42);
+  width: 100%;
+  height: 5em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  transition: top 0.2s ease-in-out;
+}
+
+.hidden {
+  top: -5em;
+}
+
+.main-navigation {
+  display: flex;
+  justify-content: right;
+  padding: 0.5em 3em;
+  gap: 4em;
+}
+
+.main-navigation li {
+  list-style-type: none;
+  font-weight: bold;
+}
+
+.main-navigation a {
+  color: lightgrey;
+  text-decoration: transparent underline;
+  text-underline-offset: 15px;
+  transition: text-decoration-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.main-navigation a:hover {
+  color: white;
+  text-decoration-color: white;
+}
+
+#about {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#projects {
+  width: 80em;
+  height: 120em;
+  background-color: whitesmoke;
+}
+
+.projects-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2em;
+  padding: 10em 2.5em;
+  height: 100%;
+}
+
+.projects-wrapper div {
+  height: 3em;
+}
+
+.project-title {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.screenshot {
+  width: 100%;
+  height: 100%;
+  border: none;
+  width: 22em;
+  height: 12em;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px gray;
+  transition: transform 0.2s ease-in-out;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.screenshot:hover {
+  transform: scale(1.01);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.project-description-wrapper {
+  width: 100%;
+}
+
+.project-description {
+  text-align: center;
+  padding: 0 0.2em;
+}
+
+.project-links-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.fa-external-link-square {
+  visibility: hidden;
+  opacity: 0;
+  padding-left: 5px;
+}
+
+.project-links-wrapper p {
+  font-weight: bold;
+  text-decoration: underline transparent;
+  transition: text-decoration 0.2s linear;
+}
+
+.project-links-wrapper p:hover {
+  text-decoration-color: #282828;
+}
+
+.project-links-wrapper p:hover .fa-external-link-square {
+  visibility: visible;
+  opacity: 1;
+}
+
+.github-icon {
+  font-size: 1.5rem;
+  padding-top: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.github-icon:hover {
+  transform: scale(1.05);
+}
+
+#skills {
+  background-color: azure;
+  height: 40em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+.icons-wrapper svg {
+  width: 6em;
+  height: 6em;
+  transition: transform 0.2s ease-in-out;
+}
+
+.icons-wrapper svg:hover {
+  transform: translateY(-2px);
+}
+
+#contact {
+  width: 100%;
+  background-color: whitesmoke;
+}
+
+.contact-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  gap: 2em;
+  padding: 8em 2.5em;
 }
 
-.App-link {
-  color: #61dafb;
+.contact-title {
+  font-size: 3rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-container {
+  width: 50em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+input,
+textarea {
+  padding: 1em;
+  margin: 1em;
+  border-radius: 5px;
+  border: none;
+}
+
+textarea {
+  resize: none;
+  height: 10em;
+}
+
+.submit-btn {
+  font-weight: bold;
+  padding: 1.5em;
+  transition: transform 0.2s ease-in-out;
+}
+
+.submit-btn:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
 }
