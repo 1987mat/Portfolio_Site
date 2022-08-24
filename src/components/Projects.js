@@ -4,6 +4,7 @@ import { projects } from '../data';
 function Projects() {
   return (
     <section id="projects">
+      <h1 className="projects-section-title">My Projects</h1>
       <div className="projects-wrapper">
         {projects.map((project, index) => (
           <div key={index}>

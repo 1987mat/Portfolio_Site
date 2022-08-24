@@ -5,6 +5,7 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import ContactForm from './components/ContactForm';
+import Footer from './components/Footer';
 
 function App() {
   const prevScrollY = useRef(0);
@@ -35,13 +36,16 @@ function App() {
   }, [showHeader]);
 
   return (
-    <main>
+    <React.Fragment>
       <Navbar show={showHeader} />
-      <About />
-      <Projects />
-      <Skills />
-      <ContactForm />
-    </main>
+      <main>
+        <About />
+        <Projects />
+        <Skills />
+        <ContactForm />
+      </main>
+      <Footer />
+    </React.Fragment>
   );
 }
 
