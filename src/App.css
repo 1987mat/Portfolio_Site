@@ -48,16 +48,28 @@ header {
   top: 15px;
 }
 
-header .github i {
+.sm-icons {
+  display: flex;
+  gap: 3em;
+}
+
+.sm-icons .github i,
+.linkedin i {
   color: whitesmoke;
 }
 
-header .github {
+.sm-icons .github {
   font-size: 1.5rem;
   transition: transform 0.3s ease-in-out;
 }
 
-header .github:hover {
+.sm-icons .linkedin {
+  font-size: 1.3rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sm-icons .github:hover,
+.linkedin:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
@@ -211,6 +223,7 @@ main {
 .project-links-wrapper {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 1em;
 }
 
@@ -237,7 +250,7 @@ main {
 
 .github-icon {
   font-size: 1.5rem;
-  padding-top: 10px;
+  /* padding-top: 10px; */
   transition: transform 0.2s ease-in-out;
 }
 
@@ -247,20 +260,22 @@ main {
 
 #skills {
   background-color: azure;
-  height: 40em;
+  min-height: fit-content;
 }
 
 .skills-section-title {
   font-size: 3rem;
   text-align: center;
-  margin: 2em;
+  margin-top: 2em;
+  margin-bottom: 3em;
 }
 
 .icons-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2em;
+  gap: 3em;
+  padding: 0 5em 10em 5em;
 }
 
 .icons-wrapper svg {
@@ -297,14 +312,18 @@ main {
 }
 
 .form-container {
-  width: 50em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
+  width: 70%;
 }
 
 input,
@@ -347,16 +366,155 @@ footer span {
   padding-right: 0.5em;
 }
 
-footer a {
-  font-size: 1.5rem;
-  transition: transform 0.2s ease-in-out;
+/* MEDIA QUERIES */
+/* Mobile*/
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 50%;
+  }
+
+  html.no-scroll {
+    overflow: hidden;
+    height: 100vh;
+    margin: 0;
+  }
+
+  header .hamburger {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 30;
+    padding: 1em;
+    width: 40px;
+    height: 40px;
+  }
+
+  .hamburger div {
+    top: 10px;
+    position: relative;
+    width: 100%;
+    height: 4px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    border-radius: 5px;
+  }
+
+  .hamburger.clicked {
+    background: rgb(11, 3, 42);
+    border-bottom-right-radius: 50%;
+  }
+
+  .hamburger.clicked div {
+    transform: translateX(-50px);
+    background-color: transparent;
+  }
+
+  .hamburger.clicked div::before {
+    transform: rotate(45deg) translate(35px, -35px);
+    background-color: whitesmoke;
+  }
+
+  .hamburger.clicked div::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+    background-color: whitesmoke;
+  }
+
+  .hamburger div::before,
+  .hamburger div::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: whitesmoke;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .hamburger div::before {
+    transform: translateY(-8px);
+  }
+
+  .hamburger div::after {
+    transform: translateY(8px);
+  }
+
+  header .logo {
+    visibility: hidden;
+    display: none;
+  }
+
+  nav {
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 250ms ease-in, opacity 250ms ease-in;
+    width: 100vw;
+    min-height: 100vh;
+  }
+
+  .main-navigation {
+    padding: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10em;
+  }
+
+  .main-navigation li a {
+    color: rgb(11, 3, 42);
+  }
+
+  nav.show {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  #about {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-title {
+    text-align: center;
+  }
+
+  .down-arrow-container {
+    margin: 0;
+  }
 }
 
-footer a:hover {
-  cursor: pointer;
-  transform: scale(1.05);
+/* Mobile Land */
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 60%;
+  }
 }
 
-footer i {
-  color: whitesmoke;
+/* Tablet */
+@media screen and (min-width: 768px) and (orientation: portrait) {
+  html {
+    font-size: 70%;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+/* Larger Screens */
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 100%;
+  }
 }

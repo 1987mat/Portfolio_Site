@@ -9,23 +9,26 @@ import Footer from './components/Footer';
 
 function App() {
   const prevScrollY = useRef(0);
-  const [showHeader, setShowNav] = useState(true);
+  const [showHeader, setShowHeader] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
 
-      // Scroll down
-      if (prevScrollY.current < currentScrollY && showHeader) {
-        setShowNav(false);
-      }
+      // Hide Navbar only on smaller screens
+      if (window.innerWidth > 992) {
+        // Scroll down
+        if (prevScrollY.current < currentScrollY && showHeader) {
+          setShowHeader(false);
+        }
 
-      // Scroll Up
-      if (prevScrollY.current > currentScrollY && !showHeader) {
-        setShowNav(true);
-      }
+        // Scroll Up
+        if (prevScrollY.current > currentScrollY && !showHeader) {
+          setShowHeader(true);
+        }
 
-      prevScrollY.current = currentScrollY;
+        prevScrollY.current = currentScrollY;
+      }
     };
 
     window.addEventListener('scroll', handleScroll);

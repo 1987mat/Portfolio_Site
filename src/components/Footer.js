@@ -3,10 +3,7 @@ import React from 'react';
 function Footer() {
   return (
     <footer>
-      <span>Developed by Mat</span>
-      <a href="https://github.com/1987mat" target="e_blank">
-        <i className="fa fa-github"></i>
-      </a>
+      <span>Copyright &copy; 2022. All rigths reserved.</span>
     </footer>
   );
 }
