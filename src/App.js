@@ -16,17 +16,15 @@ function App() {
       const currentScrollY = window.scrollY;
 
       // Hide Navbar only on smaller screens
-      if (window.innerWidth > 992) {
+      if (window.innerWidth >= 992) {
         // Scroll down
         if (prevScrollY.current < currentScrollY && showHeader) {
           setShowHeader(false);
         }
-
         // Scroll Up
         if (prevScrollY.current > currentScrollY && !showHeader) {
           setShowHeader(true);
         }
-
         prevScrollY.current = currentScrollY;
       }
     };

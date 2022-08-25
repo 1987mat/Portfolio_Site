@@ -41,13 +41,6 @@ header {
   top: -5em;
 }
 
-.logo {
-  width: 40px;
-  position: absolute;
-  left: 15px;
-  top: 15px;
-}
-
 .sm-icons {
   display: flex;
   gap: 3em;
@@ -72,28 +65,6 @@ header {
 .linkedin:hover {
   cursor: pointer;
   transform: scale(1.1);
-}
-
-.main-navigation {
-  display: flex;
-  gap: 4em;
-}
-
-.main-navigation li {
-  list-style-type: none;
-  font-weight: bold;
-}
-
-.main-navigation a {
-  color: lightgrey;
-  text-decoration: transparent underline;
-  text-underline-offset: 15px;
-  transition: text-decoration-color 0.2s ease-in-out, color 0.2s ease-in-out;
-}
-
-.main-navigation a:hover {
-  color: white;
-  text-decoration-color: white;
 }
 
 main {
@@ -188,7 +159,8 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 4em;
+  gap: 5em;
+  padding: 3em;
 }
 
 .project-title {
@@ -259,7 +231,7 @@ main {
 }
 
 #skills {
-  background-color: azure;
+  background-color: #f8f8f8;
   min-height: fit-content;
 }
 
@@ -379,20 +351,21 @@ footer span {
     margin: 0;
   }
 
-  header .hamburger {
+  .hamburger {
     position: fixed;
     left: 0;
     top: 0;
     z-index: 30;
     padding: 1em;
-    width: 40px;
-    height: 40px;
+    height: 5em;
+    width: 5em;
+    border-bottom-right-radius: 5px;
   }
 
   .hamburger div {
     top: 10px;
     position: relative;
-    width: 100%;
+    width: 25px;
     height: 4px;
     background-color: whitesmoke;
     display: flex;
@@ -404,7 +377,6 @@ footer span {
 
   .hamburger.clicked {
     background: rgb(11, 3, 42);
-    border-bottom-right-radius: 50%;
   }
 
   .hamburger.clicked div {
@@ -441,7 +413,7 @@ footer span {
     transform: translateY(8px);
   }
 
-  header .logo {
+  .logo {
     visibility: hidden;
     display: none;
   }
@@ -459,12 +431,17 @@ footer span {
   }
 
   .main-navigation {
-    padding: 5em;
+    padding: 8em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10em;
+    gap: 13em;
+  }
+
+  .main-navigation li {
+    list-style-type: none;
+    font-weight: bold;
   }
 
   .main-navigation li a {
@@ -496,6 +473,11 @@ footer span {
   html {
     font-size: 60%;
   }
+
+  .main-navigation {
+    padding: 8em;
+    gap: 20em;
+  }
 }
 
 /* Tablet */
@@ -509,6 +491,47 @@ footer span {
 @media screen and (min-width: 992px) {
   html {
     font-size: 90%;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .logo {
+    display: block;
+    visibility: visible;
+    width: 40px;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+  }
+
+  nav {
+    background-color: transparent;
+    position: relative;
+    top: 0;
+    left: 40px;
+    opacity: 1;
+    transform: initial;
+    width: auto;
+    min-height: auto;
+  }
+
+  .main-navigation {
+    flex-direction: row;
+    gap: 5em;
+  }
+
+  .main-navigation li a {
+    color: lightgray;
+    text-decoration: transparent underline;
+    text-underline-offset: 15px;
+    transition: text-decoration-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  }
+
+  .main-navigation li a:hover {
+    color: white;
+    text-decoration-color: white;
   }
 }
 

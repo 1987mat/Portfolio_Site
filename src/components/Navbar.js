@@ -12,16 +12,25 @@ function Navbar({ show }) {
     document.documentElement.classList.toggle('no-scroll');
   };
 
+  const handleClick = () => {
+    // Close mobile menu when click on nav item
+    if (clicked) {
+      setShowMobileMenu((prev) => !prev);
+      setClicked((prev) => !prev);
+      document.documentElement.classList.toggle('no-scroll');
+    }
+  };
+
   return (
     <header className={!show ? 'hidden' : ''}>
       <div
-        onTouchStart={handleToggle}
+        onClick={handleToggle}
         className={clicked ? 'hamburger clicked' : 'hamburger'}
       >
         <div></div>
       </div>
       <img className="logo" src={logo} alt="logo"></img>
-      <nav onTouchStart={handleToggle} className={showMobileMenu ? 'show' : ''}>
+      <nav onClick={handleClick} className={showMobileMenu ? 'show' : ''}>
         <ul className="main-navigation">
           <li>
             <a href="#about">About</a>
