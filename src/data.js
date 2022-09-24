@@ -16,7 +16,7 @@ export const projects = [
   },
   {
     title: 'Github Finder App',
-    description: 'API app that fetches github users',
+    description: 'API app that fetches github users profile',
     image: github,
     link: 'https://1987mat.github.io/Github_Finder_App',
     github: 'https://github.com/1987mat/Github_Finder_App',

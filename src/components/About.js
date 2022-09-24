@@ -1,13 +1,15 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
+import headshot from '../images/photo.jpg';
 
 function About() {
   return (
     <section id="about">
       <div className="heading-wrapper">
-        <h1 className="main-title">Matteo Calvani</h1>
+        <p className="small-title">Hi, I'm</p>
+        <h1 className="main-title">Matteo Calvani.</h1>
         <div className="type-writer-wrapper">
-          <span style={{ color: 'darkred' }}>Web</span>
+          <span style={{ color: '#f08000', fontWeight: 'lighter' }}>Web</span>
           <Typewriter
             options={{
               strings: ['Developer', 'Designer'],
@@ -16,15 +18,18 @@ function About() {
             }}
           />
         </div>
-      </div>
-      <div className="down-arrow-container">
-        <a href="#projects">
-          <div className="down-arrow-wrapper">
-            <i className="fa fa-chevron-down"></i>
-            <i className="fa fa-chevron-down"></i>
-            <i className="fa fa-chevron-down"></i>
-          </div>
+        <p className="heading-text">
+          I build user friendly and responsive websites using front end
+          technologies in a creative way.
+        </p>
+        <a href="#projects" className="btn-about">
+          Projects
         </a>
+      </div>
+      <div className="photo-wrapper">
+        <div className="photo-border">
+          <img src={headshot} alt="headshot"></img>
+        </div>
       </div>
     </section>
   );

@@ -37,8 +37,31 @@ header {
   transition: top 0.2s ease-in-out;
 }
 
+.main-navigation i {
+  padding-right: 1em;
+}
+
 .hidden {
   top: -5em;
+}
+
+.resume-link {
+  color: whitesmoke;
+  background-color: transparent;
+  padding: 0.5em;
+  border: 1px solid #f08000;
+  border-radius: 2px;
+  font-weight: 700;
+  transition: transform 0.2s ease-in-out;
+}
+
+.resume-link:hover {
+  transform: translateY(-1px);
+}
+
+.resume-link i {
+  color: whitesmoke;
+  padding-right: 0.5em;
 }
 
 .sm-icons {
@@ -76,25 +99,46 @@ main {
 #about {
   background: rgb(11, 3, 42);
   height: 100vh;
+  width: 100vw;
   padding: 5em;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  gap: 5em;
 }
 
 .heading-wrapper {
   display: flex;
+  width: 70%;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding-bottom: 8em;
+  align-items: flex-start;
+  padding-left: 2em;
+  padding-bottom: 4em;
+  margin-top: 10em;
+}
+
+.heading-wrapper .small-title {
+  font-size: 0.8rem;
+}
+
+.heading-wrapper p {
+  color: whitesmoke;
+}
+
+.heading-text {
+  margin-top: 2em;
+  font-weight: 500;
+  line-height: 1.6;
+  width: 35em;
 }
 
 .main-title {
+  margin-top: 0;
+  margin-left: -5px;
   font-size: 4.5rem;
   color: lightgray;
-  font-weight: normal;
-  letter-spacing: 10px;
+  font-weight: 500;
+  letter-spacing: 8px;
 }
 
 .type-writer-wrapper {
@@ -104,42 +148,66 @@ main {
 
 .type-writer-wrapper span {
   margin-right: 10px;
-  color: lightgray;
+  color: whitesmoke;
   font-size: 3rem;
-  font-weight: 500;
 }
 
-.down-arrow-container {
-  margin: 25em 5em 2em 2em;
+.heading-wrapper a {
+  text-align: center;
+  margin-top: 2em;
+  border: none;
+  border-radius: 2px;
+  padding: 1em;
+  width: 12em;
+  font-weight: 700;
+  background-color: #f08000;
+  opacity: 0.9;
+  transition: opacity 0.3s ease-in-out;
 }
 
-.down-arrow-wrapper {
-  display: flex;
-  flex-direction: column;
-  -moz-animation: bounce 2s infinite;
-  -webkit-animation: bounce 2s infinite;
-  animation: bounce 2s infinite;
+.heading-wrapper a:hover {
+  cursor: pointer;
+  opacity: 1;
 }
 
-@keyframes bounce {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-30px);
-  }
-  60% {
-    transform: translateY(-15px);
-  }
+.photo-wrapper {
+  width: 30%;
+  padding: 2em;
+  margin-top: 5em;
 }
 
-.fa-chevron-down {
-  color: white;
-  font-size: 1.5rem;
+.photo-wrapper .photo-border {
+  display: inline-block;
+  margin: 25px auto;
+  padding: 25px;
+  position: relative;
+  width: auto;
+}
+
+.photo-wrapper img {
+  width: 100%;
+  border-radius: 2px;
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+  z-index: 5;
+}
+
+.photo-border::before,
+.photo-border::after {
+  content: ”;
+  position: absolute;
+  background: orange;
+}
+
+.photo-border::before {
+  width: calc(100% + 50px + 4px - 120px);
+  height: calc(100% + 4px);
+  top: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
 }
 
 #projects {
@@ -171,16 +239,17 @@ main {
   width: 100%;
   height: 100%;
   border: none;
-  border: 1px solid gray;
   width: 22em;
   height: 12em;
   border-radius: 10px;
   box-shadow: 2px 1px 1px gray;
-  transition: transform 0.2s ease-in-out;
+  opacity: 1;
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
 
 .screenshot:hover {
   transform: scale(1.01);
+  opacity: 0.85;
 }
 
 .project-description-wrapper {
@@ -304,6 +373,7 @@ textarea {
   margin: 1em;
   border-radius: 2px;
   border: 0.5px solid gray;
+  border-top: none;
 }
 
 textarea {
@@ -434,7 +504,6 @@ footer span {
     padding: 8em;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 13em;
   }
@@ -444,28 +513,25 @@ footer span {
     font-weight: bold;
   }
 
-  .main-navigation li a {
+  .main-navigation li a,
+  .main-navigation i {
     color: rgb(11, 3, 42);
   }
 
   nav.show {
     transform: translateX(0);
-    opacity: 1;
+    opacity: 0.98;
   }
 
-  #about {
+  /* #about {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
+  } */
 
-  .main-title {
+  /* .main-title {
     text-align: center;
-  }
-
-  .down-arrow-container {
-    margin: 0;
-  }
+  } */
 }
 
 /* Mobile Land */
@@ -510,7 +576,7 @@ footer span {
     background-color: transparent;
     position: relative;
     top: 0;
-    left: 40px;
+    left: 60px;
     opacity: 1;
     transform: initial;
     width: auto;
@@ -532,6 +598,14 @@ footer span {
   .main-navigation li a:hover {
     color: white;
     text-decoration-color: white;
+  }
+
+  .main-navigation i {
+    color: whitesmoke;
+  }
+
+  #about {
+    flex-direction: row;
   }
 }
 

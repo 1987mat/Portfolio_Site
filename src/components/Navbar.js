@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-
 import logo from '../images/logo.png';
+import cv from '../Matteo Calvani Resume.pdf';
 
 function Navbar({ show }) {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -33,19 +33,27 @@ function Navbar({ show }) {
       <nav onClick={handleClick} className={showMobileMenu ? 'show' : ''}>
         <ul className="main-navigation">
           <li>
+            <i className="fa fa-user"></i>
             <a href="#about">About</a>
           </li>
           <li>
+            <i className="fa fa-suitcase" aria-hidden="true"></i>{' '}
             <a href="#projects">Work</a>
           </li>
           <li>
+            <i className="fa fa-laptop"></i>
             <a href="#skills">Skills</a>
           </li>
           <li>
+            <i className="fa fa-comment"></i>
             <a href="#contact">Contact</a>
           </li>
         </ul>
       </nav>
+      <a className="resume-link" href={cv} download>
+        <i className="fa fa-download"></i>
+        Resume
+      </a>
       <div className="sm-icons">
         <a
           className="github"
