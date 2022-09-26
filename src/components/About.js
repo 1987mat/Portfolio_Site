@@ -27,9 +27,11 @@ function About() {
         </a>
       </div>
       <div className="photo-wrapper">
-        <div className="photo-border">
-          <img src={headshot} alt="headshot"></img>
-        </div>
+        <div className="border top left"></div>
+        <div className="border top right"></div>
+        <div className="border bottom left"></div>
+        <div className="border bottom right"></div>
+        <img src={headshot} alt="headshot"></img>
       </div>
     </section>
   );
