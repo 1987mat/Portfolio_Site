@@ -106,12 +106,12 @@ main {
   padding-bottom: 15em;
   display: flex;
   justify-content: space-between;
-  gap: 5em;
+  gap: 3em;
 }
 
 .heading-wrapper {
   display: flex;
-  width: 45em;
+  min-width: 25em;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
@@ -175,6 +175,7 @@ main {
   padding: 2em;
   position: relative;
   margin-top: 15em;
+  flex-shrink: 0;
 }
 
 .photo-wrapper img {
@@ -224,6 +225,7 @@ main {
 
 /* PROJECTS SECTION */
 #projects {
+  padding-top: 4em;
   padding-bottom: 5em;
   background-color: #fefefa;
   height: fit-content;
@@ -245,11 +247,20 @@ main {
   padding: 3em;
 }
 
+.project-container {
+  width: 25em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .project-title {
   text-align: center;
 }
 
 .screenshot {
+  text-align: center;
   width: 100%;
   height: 100%;
   border: none;
@@ -267,19 +278,17 @@ main {
 }
 
 .project-description-wrapper {
-  width: 100%;
+  width: 20em;
+  margin: 0 auto;
 }
 
 .project-description {
   text-align: center;
-  padding: 0 0.2em;
 }
 
 .project-links-wrapper {
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 1em;
 }
 
 .fa-external-link-square {
@@ -543,10 +552,6 @@ footer span {
   #about {
     justify-content: space-between;
     align-items: flex-start;
-  }
-
-  .heading-wrapper {
-    width: 50%;
   }
 
   .photo-wrapper {
