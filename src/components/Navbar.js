@@ -37,7 +37,7 @@ function Navbar({ show }) {
             <a href="#about">About</a>
           </li>
           <li>
-            <i className="fa fa-suitcase" aria-hidden="true"></i>{' '}
+            <i className="fa fa-suitcase" aria-hidden="true"></i>
             <a href="#projects">Work</a>
           </li>
           <li>
@@ -52,7 +52,7 @@ function Navbar({ show }) {
       </nav>
       <a className="resume-link" href={cv} download>
         <i className="fa fa-download"></i>
-        Resume
+        <span>Resume</span>
       </a>
       <div className="sm-icons">
         <a

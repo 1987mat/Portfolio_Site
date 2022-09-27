@@ -47,6 +47,7 @@ header {
 }
 
 .resume-link {
+  display: flex;
   color: whitesmoke;
   background-color: transparent;
   padding: 0.5em;
@@ -60,7 +61,8 @@ header {
   transform: translateY(-1px);
 }
 
-.resume-link i {
+.resume-link i,
+.resume-link span {
   color: whitesmoke;
   padding-right: 0.5em;
 }
@@ -590,12 +592,18 @@ footer span {
   }
 
   #about {
-    justify-content: space-between;
-    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .heading-wrapper {
+    margin-top: 4em;
   }
 
   .photo-wrapper {
-    align-self: center;
+    margin-top: 50px;
+    width: 50%;
+    align-self: flex-end;
   }
 }
 
@@ -653,6 +661,10 @@ footer span {
     gap: 5em;
   }
 
+  .main-navigation li {
+    display: flex;
+  }
+
   .main-navigation li a {
     color: lightgray;
     text-decoration: transparent underline;
@@ -676,7 +688,13 @@ footer span {
   }
 
   .heading-wrapper {
-    width: 70%;
+    width: 60%;
+  }
+
+  .photo-wrapper {
+    width: 20em;
+    margin-top: 15em;
+    align-self: initial;
   }
 }
 
