@@ -1,12 +1,12 @@
 import React from 'react';
 import { projects } from '../data';
 
-function Projects() {
+const Projects = React.forwardRef((props, ref) => {
   return (
     <section id="projects">
       <div className="projects-wrapper">
         {projects.map((project, index) => (
-          <div key={index} className="project-container">
+          <div ref={ref} key={index} className="project-container">
             <h2 className="project-title">{project.title}</h2>
             <a
               className="project-card-link"
@@ -51,6 +51,6 @@ function Projects() {
       </div>
     </section>
   );
-}
+});
 
 export default Projects;

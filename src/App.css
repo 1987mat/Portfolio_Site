@@ -116,6 +116,14 @@ main {
   justify-content: center;
   align-items: flex-start;
   padding-top: 12em;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: transform 0.5s ease-in-out, opacity 0.9s ease-in-out;
+}
+
+.heading-wrapper.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .heading-wrapper .small-title {
@@ -176,6 +184,14 @@ main {
   position: relative;
   margin-top: 15em;
   flex-shrink: 0;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: transform 0.5s ease-in-out, opacity 0.9s ease-in-out;
+}
+
+.photo-wrapper.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .photo-wrapper img {
@@ -253,6 +269,14 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: transform 0.5s ease-in-out, opacity 0.9s ease-in-out;
+}
+
+.project-container.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .project-title {
@@ -325,7 +349,7 @@ main {
 /* SKILLS SECTION */
 #skills {
   background-color: #f8f8f8;
-  min-height: fit-content;
+  /* min-height: fit-content; */
 }
 
 .skills-section-title {
@@ -340,7 +364,15 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   gap: 3em;
-  padding: 0 5em 10em 5em;
+  padding: 10em 5em 10em 5em;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: transform 0.5s ease-in-out, opacity 0.9s ease-in-out;
+}
+
+.icons-wrapper.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .icons-wrapper svg {
@@ -364,6 +396,14 @@ main {
   justify-content: center;
   align-items: center;
   padding-bottom: 10em;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: transform 0.5s ease-in-out, opacity 0.9s ease-in-out;
+}
+
+.contact-wrapper.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .success-message {

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 
-function ContactForm() {
+const ContactForm = React.forwardRef((props, ref) => {
   const [message, setMessage] = useState('');
   const sendEmail = (e) => {
     e.preventDefault();
@@ -32,7 +32,7 @@ function ContactForm() {
 
   return (
     <section id="contact">
-      <div className="contact-wrapper">
+      <div className="contact-wrapper" ref={ref}>
         <h1 className="contact-title">Get in touch</h1>
         <span className="success-message">{message}</span>
         <div className="form-container">
@@ -68,6 +68,6 @@ function ContactForm() {
       </div>
     </section>
   );
-}
+});
 
 export default ContactForm;
