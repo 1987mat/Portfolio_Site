@@ -6,7 +6,7 @@
 
 - [Repo](https://github.com/1987mat/Portfolio_Site 'Repo')
 
-- [Live]( 'Live View')
+- [Live]()
 
 ## Screenshots
 
