@@ -2,7 +2,7 @@
   "name": "portfolio-site",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://{1987mat}.github.io/{Portfolio_Site}",
+  "homepage": "https://1987mat.github.io/Portfolio_Site",
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
     "@testing-library/jest-dom": "^5.16.5",
