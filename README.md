@@ -8,7 +8,11 @@
 
 ## Screenshots
 
-![Preview](screenshots/resume.png)
+<!-- ![Preview](screenshots/resume.png) -->
+
+<div align="center">
+    <img src="/screenshots/resume.png" width="400px"</img> 
+</div>
 
 ## Built With
 
