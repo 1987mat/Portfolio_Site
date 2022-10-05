@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
-import Navbar from './components/Navbar';
+import NavBar from './components/NavBar';
 import About from './components/About';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
@@ -13,16 +13,19 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const currentScrollY = window.scrollY;
+      const currentScrollY = window.pageYOffset;
 
       // Hide Navbar only on smaller screens
       if (window.innerWidth >= 992) {
-        // Scroll down
+        // Scroll down and hide navbar
         if (prevScrollY.current < currentScrollY && showHeader) {
           setShowHeader(false);
         }
-        // Scroll Up
-        if (prevScrollY.current > currentScrollY && !showHeader) {
+        // Scroll Up and show navbar
+        if (
+          (prevScrollY.current > currentScrollY && !showHeader) ||
+          (window.pageYOffset < 50 && !showHeader)
+        ) {
           setShowHeader(true);
         }
         prevScrollY.current = currentScrollY;
@@ -49,6 +52,7 @@ function App() {
     ref2: headShot,
   };
 
+  // Fade in effect when user scroll to sections
   useEffect(
     () => {
       const observer = new IntersectionObserver(
@@ -80,7 +84,7 @@ function App() {
 
   return (
     <React.Fragment>
-      <Navbar show={showHeader} />
+      <NavBar show={showHeader} />
       <main>
         <About ref={refs} />
         <Projects ref={pushRef} />

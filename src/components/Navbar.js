@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import logo from '../images/logo.png';
 import cv from '../Matteo Calvani Resume.pdf';
 
-function Navbar({ show }) {
+const NavBar = ({ show }) => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const [clicked, setClicked] = useState(false);
 
@@ -72,6 +72,6 @@ function Navbar({ show }) {
       </div>
     </header>
   );
-}
+};
 
-export default Navbar;
+export default NavBar;

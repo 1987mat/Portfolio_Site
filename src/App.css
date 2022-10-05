@@ -315,6 +315,7 @@ main {
 .project-links-wrapper {
   display: flex;
   align-items: center;
+  gap: 1em;
 }
 
 .fa-external-link-square {
@@ -351,7 +352,6 @@ main {
 /* SKILLS SECTION */
 #skills {
   background-color: #f8f8f8;
-  /* min-height: fit-content; */
 }
 
 .skills-section-title {
@@ -513,10 +513,6 @@ footer span {
     border-radius: 5px;
   }
 
-  .hamburger.clicked {
-    background: rgb(11, 3, 42);
-  }
-
   .hamburger.clicked div {
     transform: translateX(-50px);
     background-color: transparent;
@@ -524,12 +520,12 @@ footer span {
 
   .hamburger.clicked div::before {
     transform: rotate(45deg) translate(35px, -35px);
-    background-color: whitesmoke;
+    background-color: black;
   }
 
   .hamburger.clicked div::after {
     transform: rotate(-45deg) translate(35px, 35px);
-    background-color: whitesmoke;
+    background-color: black;
   }
 
   .hamburger div::before,
@@ -588,7 +584,7 @@ footer span {
 
   nav.show {
     transform: translateX(0);
-    opacity: 0.98;
+    opacity: 1;
   }
 
   #about {
