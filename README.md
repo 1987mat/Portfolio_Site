@@ -8,7 +8,7 @@
 
 ## Screenshots
 
-![Home Page](/screenshots/resume.png 'Preview')
+![Preview](screenshots/resume.png)
 
 ## Built With
 
