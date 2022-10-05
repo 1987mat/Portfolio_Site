@@ -1,7 +1,6 @@
-# Project title
+# Portfolio Website
 
-<!-- <h1 align="center"><project-name></h1>
-<p align="center"><project-description></p> -->
+# Personal portfolio website built with React JS functional components.
 
 ## Links
 
