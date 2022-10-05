@@ -1,6 +1,6 @@
 # Portfolio Website
 
-# Personal portfolio website built with React JS functional components.
+<p> Personal portfolio website built with React JS functional components.</p>
 
 ## Links
 
