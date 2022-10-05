@@ -1,6 +1,6 @@
 # Portfolio Website
 
-<p> Personal portfolio website built with React JS functional components.</p>
+<p> Personal portfolio website built with React JS functional components, hooks and Intersection Observer API for fade in animation.</p>
 
 ## Links
 
@@ -8,7 +8,7 @@
 
 ## Screenshots
 
-![Home Page](/screenshots/1.png 'Home Page')
+![Home Page](/screenshots/resume.png 'Preview')
 
 ## Built With
 
@@ -22,6 +22,3 @@
 ## Author
 
 **Matteo Calvani**
-
-<!-- . Intersection Observr API for fade in animation.
-. EmailJS library for contact section. -->
