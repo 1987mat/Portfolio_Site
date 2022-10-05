@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/%7BPortfolio_Site%7D/static/css/main.903e15c4.css",
+    "main.js": "/%7BPortfolio_Site%7D/static/js/main.7242c260.js",
+    "static/js/787.37faa4c4.chunk.js": "/%7BPortfolio_Site%7D/static/js/787.37faa4c4.chunk.js",
+    "static/media/photo.jpg": "/%7BPortfolio_Site%7D/static/media/photo.43a0edbe79cbc3415d24.jpg",
+    "static/media/restaurant.png": "/%7BPortfolio_Site%7D/static/media/restaurant.8c29d9285224dec2bcac.png",
+    "static/media/fitwell.png": "/%7BPortfolio_Site%7D/static/media/fitwell.7dc4db34e2af742b50cc.png",
+    "static/media/toDoList.png": "/%7BPortfolio_Site%7D/static/media/toDoList.42578d2bc51d34bfdef5.png",
+    "static/media/weather_app.png": "/%7BPortfolio_Site%7D/static/media/weather_app.d450fec721c9ce4be7b7.png",
+    "static/media/cafe_dolce.png": "/%7BPortfolio_Site%7D/static/media/cafe_dolce.6eed678ec84a6909bbd4.png",
+    "static/media/logo.png": "/%7BPortfolio_Site%7D/static/media/logo.4846b97835f23d9d6105.png",
+    "static/media/Matteo Calvani Resume.pdf": "/%7BPortfolio_Site%7D/static/media/Matteo Calvani Resume.83711fd62973c07f49a9.pdf",
+    "static/media/github.png": "/%7BPortfolio_Site%7D/static/media/github.f3e5ac5089cf616530e8.png",
+    "static/media/resume.png": "/%7BPortfolio_Site%7D/static/media/resume.9c71b6f553fd2e7a1c30.png",
+    "index.html": "/%7BPortfolio_Site%7D/index.html",
+    "main.903e15c4.css.map": "/%7BPortfolio_Site%7D/static/css/main.903e15c4.css.map",
+    "main.7242c260.js.map": "/%7BPortfolio_Site%7D/static/js/main.7242c260.js.map",
+    "787.37faa4c4.chunk.js.map": "/%7BPortfolio_Site%7D/static/js/787.37faa4c4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.903e15c4.css",
+    "static/js/main.7242c260.js"
+  ]
+}
