@@ -1,6 +1,6 @@
-<h1 align="center"><Portfolio Website></h1>
+<h1 align="center"><project-name></h1>
 
-<p align="center"><Personal portfolio website built with React JS functional components.></p>
+<p align="center"><project-description></p>
 
 ## Links
 
@@ -14,8 +14,6 @@
 
 ![](/screenshots/3.png)
 
-## Available Commands
-
 ## Built With
 
 - React JS
@@ -28,8 +26,6 @@
 ## Author
 
 **Matteo Calvani**
-
-built with ReactJS functional components and hooks.
 
 . Intersection Observr API for fade in animation.
 . EmailJS library for contact section.
