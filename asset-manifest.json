@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio_Site/static/css/main.903e15c4.css",
-    "main.js": "/Portfolio_Site/static/js/main.24c40f4d.js",
+    "main.js": "/Portfolio_Site/static/js/main.bb008118.js",
     "static/js/787.37faa4c4.chunk.js": "/Portfolio_Site/static/js/787.37faa4c4.chunk.js",
     "static/media/photo.jpg": "/Portfolio_Site/static/media/photo.43a0edbe79cbc3415d24.jpg",
     "static/media/restaurant.png": "/Portfolio_Site/static/media/restaurant.8c29d9285224dec2bcac.png",
@@ -11,15 +11,16 @@
     "static/media/cafe_dolce.png": "/Portfolio_Site/static/media/cafe_dolce.6eed678ec84a6909bbd4.png",
     "static/media/logo.png": "/Portfolio_Site/static/media/logo.4846b97835f23d9d6105.png",
     "static/media/Matteo Calvani Resume.pdf": "/Portfolio_Site/static/media/Matteo Calvani Resume.9ebfbba6f1618721bb59.pdf",
+    "static/media/library.png": "/Portfolio_Site/static/media/library.479a18de28d2aa155216.png",
     "static/media/github.png": "/Portfolio_Site/static/media/github.f3e5ac5089cf616530e8.png",
     "static/media/resume.png": "/Portfolio_Site/static/media/resume.9c71b6f553fd2e7a1c30.png",
     "index.html": "/Portfolio_Site/index.html",
     "main.903e15c4.css.map": "/Portfolio_Site/static/css/main.903e15c4.css.map",
-    "main.24c40f4d.js.map": "/Portfolio_Site/static/js/main.24c40f4d.js.map",
+    "main.bb008118.js.map": "/Portfolio_Site/static/js/main.bb008118.js.map",
     "787.37faa4c4.chunk.js.map": "/Portfolio_Site/static/js/787.37faa4c4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.903e15c4.css",
-    "static/js/main.24c40f4d.js"
+    "static/js/main.bb008118.js"
   ]
 }
