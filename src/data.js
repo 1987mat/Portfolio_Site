@@ -4,6 +4,7 @@ import cafeDolce from './images/cafe_dolce.png';
 import resume from './images/resume.png';
 import toDoList from './images/toDoList.png';
 import restaurant from './images/restaurant.png';
+import library from './images/library.png';
 import weatherApp from './images/weather_app.png';
 
 export const projects = [
@@ -49,6 +50,13 @@ export const projects = [
     image: restaurant,
     link: 'https://1987mat.github.io/Restaurant_Page',
     github: 'https://github.com/1987mat/Restaurant_Page',
+  },
+  {
+    title: 'Library App',
+    description: 'CRUD App built with Vanilla JS',
+    image: library,
+    link: 'https://1987mat.github.io/LibraryApp',
+    github: 'https://github.com/1987mat/LibraryApp',
   },
   {
     title: 'Weather App',
