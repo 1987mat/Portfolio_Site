@@ -590,6 +590,7 @@ footer span {
   #about {
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
   }
 
   .heading-wrapper {
