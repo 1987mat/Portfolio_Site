@@ -505,9 +505,10 @@ footer span {
 /* Mobile */
 @media screen and (min-width: 320px) {
   html.no-scroll {
-    overflow: hidden;
+    /* overflow: hidden;
     height: 100vh;
-    margin: 0;
+    margin: 0; */
+    touch-action: none;
   }
 
   .hamburger {
