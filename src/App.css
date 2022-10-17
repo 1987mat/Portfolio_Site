@@ -470,10 +470,14 @@ textarea {
 }
 
 .submit-btn {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border: none;
   font-weight: bold;
   padding: 1.5em;
   transition: transform 0.2s ease-in-out;
+  background-color: gainsboro;
 }
 
 .submit-btn:hover {
@@ -576,11 +580,13 @@ footer span {
     position: fixed;
     top: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
     transform: translateX(-100%);
     opacity: 0;
     transition: transform 250ms ease-in, opacity 250ms ease-in;
-    width: 100vw;
-    min-height: 100vh;
+    width: 100%;
+    /* min-height: 100vh; */
   }
 
   .main-navigation {
@@ -594,7 +600,7 @@ footer span {
   .main-navigation li {
     list-style-type: none;
     font-weight: bold;
-    font-size: larger;
+    font-size: 2rem;
   }
 
   .main-navigation li a,
