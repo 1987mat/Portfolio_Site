@@ -14,9 +14,11 @@ const NavBar = ({ show }) => {
   };
 
   const handleClick = () => {
-    setShowMobileMenu((prev) => !prev);
-    setClicked((prev) => !prev);
-    document.documentElement.classList.toggle('no-scroll');
+    if (clicked) {
+      setShowMobileMenu((prev) => !prev);
+      setClicked((prev) => !prev);
+      document.documentElement.classList.toggle('no-scroll');
+    }
   };
 
   return (

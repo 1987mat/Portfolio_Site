@@ -624,10 +624,23 @@ footer span {
   }
 }
 
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50%;
+  }
+  .main-navigation {
+    padding: 11em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15em;
+  }
+}
+
 /* Mobile Land */
 @media screen and (min-width: 480px) {
   html {
-    font-size: 45%;
+    font-size: 50%;
   }
 
   .main-navigation {
@@ -698,7 +711,7 @@ footer span {
     transition: text-decoration-color 0.2s ease-in-out, color 0.2s ease-in-out;
   }
 
-  .main-navigation li a:hover {
+  .main-navigation li .nav-link:hover {
     color: white;
     text-decoration-color: white;
     cursor: pointer;
