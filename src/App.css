@@ -182,11 +182,9 @@ main {
 }
 
 .photo-wrapper {
-  width: 18em;
   padding: 2em;
   position: relative;
-  margin-top: 15em;
-  flex-shrink: 0;
+  /* flex-shrink: 0; */
   opacity: 1;
   transform: translateY(50px);
   transition: transform 0.5s ease-in-out, opacity 0.9s ease-in-out;
@@ -851,8 +849,7 @@ footer span {
 
   .photo-wrapper {
     display: flex;
-    width: 18em;
-    margin-top: 12em;
+    width: 25em;
     align-self: initial;
   }
 
@@ -865,7 +862,47 @@ footer span {
 
 /* Larger Screens */
 @media screen and (min-width: 1200px) {
-  html {
-    font-size: 100%;
+  #about {
+    padding-top: 22em;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .heading-wrapper {
+    min-width: 25em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1em;
+    padding-bottom: 10em;
+  }
+
+  .heading-wrapper .main-title {
+    font-size: 3.5rem;
+  }
+
+  .heading-wrapper p {
+    font-size: 1rem;
+    text-align: start;
+  }
+
+  .heading-text {
+    width: 70%;
+  }
+
+  .btn-about {
+    font-size: 1rem;
+  }
+
+  .photo-wrapper {
+    display: flex;
+    align-self: initial;
+  }
+
+  .projects-title,
+  .skills-title,
+  .contact-title {
+    font-size: 3rem;
   }
 }
