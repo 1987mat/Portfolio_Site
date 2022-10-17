@@ -29,7 +29,9 @@ const NavBar = ({ show }) => {
       >
         <div></div>
       </div>
-      <img className="logo" src={logo} alt="logo"></img>
+      <Link to="about" spy={true} smooth={true} offset={0} duration={1000}>
+        <img className="logo" src={logo} alt="logo"></img>
+      </Link>
       <nav className={showMobileMenu ? 'show' : ''}>
         <ul className="main-navigation">
           <li>
