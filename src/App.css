@@ -8,7 +8,6 @@
 }
 
 html {
-  scroll-behavior: smooth;
   overflow-x: hidden;
   overflow-y: scroll;
 }
@@ -120,13 +119,13 @@ main {
   align-items: flex-start;
   padding-top: 12em;
   opacity: 0;
-  transform: translateY(50px);
-  transition: transform 0.5s ease-in-out, opacity 0.9s ease-in-out;
+  transform: translateX(50px);
+  transition: transform 0.9s ease-in-out, opacity 0.9s ease-in-out;
 }
 
 .heading-wrapper.show {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateX(0);
 }
 
 .heading-wrapper .small-title {
@@ -285,7 +284,7 @@ main {
   align-items: center;
   opacity: 0;
   transform: translateY(50px);
-  transition: transform 0.5s ease-in-out, opacity 0.9s ease-in-out;
+  transition: transform 0.9s ease-in-out, opacity 0.9s ease-in-out;
 }
 
 .project-container.show {
@@ -362,6 +361,8 @@ main {
 
 /* SKILLS SECTION */
 #skills {
+  padding-top: 4em;
+  padding-bottom: 5em;
   background-color: #f8f8f8;
   display: flex;
   flex-direction: column;
@@ -389,13 +390,13 @@ main {
   gap: 3em;
   padding: 10em 5em 10em 5em;
   opacity: 0;
-  transform: translateY(50px);
+  transform: translateX(100px);
   transition: transform 0.5s ease-in-out, opacity 0.9s ease-in-out;
 }
 
 .icons-wrapper.show {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateX(0);
 }
 
 .icons-wrapper svg {
@@ -410,6 +411,8 @@ main {
 
 /* CONTACT SECTION */
 #contact {
+  padding-top: 4em;
+  padding-bottom: 5em;
   background-color: #fefefa;
 }
 
@@ -420,7 +423,7 @@ main {
   align-items: center;
   padding-bottom: 10em;
   opacity: 0;
-  transform: translateY(50px);
+  transform: translateY(100px);
   transition: transform 0.5s ease-in-out, opacity 0.9s ease-in-out;
 }
 
@@ -583,11 +586,11 @@ footer span {
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
+    /* right: 0;
+    bottom: 0; */
     transform: translateX(-100%);
     opacity: 0;
-    transition: transform 250ms ease-in, opacity 250ms ease-in;
+    transition: transform 300ms ease-in, opacity 300ms ease-in;
     width: 100%;
     min-height: 100%;
   }
@@ -606,7 +609,7 @@ footer span {
     font-size: 2rem;
   }
 
-  .main-navigation li a,
+  .main-navigation li .nav-link,
   .main-navigation i {
     color: whitesmoke;
   }
@@ -688,7 +691,7 @@ footer span {
     font-size: initial;
   }
 
-  .main-navigation li a {
+  .main-navigation li .nav-link {
     color: lightgray;
     text-decoration: transparent underline;
     text-underline-offset: 15px;
@@ -698,6 +701,7 @@ footer span {
   .main-navigation li a:hover {
     color: white;
     text-decoration-color: white;
+    cursor: pointer;
   }
 
   .main-navigation i {

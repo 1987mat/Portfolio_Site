@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-scroll';
 import logo from '../images/logo.png';
 import cv from '../Matteo Calvani Resume.pdf';
 
@@ -13,12 +14,9 @@ const NavBar = ({ show }) => {
   };
 
   const handleClick = () => {
-    // Close mobile menu when click on nav item
-    if (clicked) {
-      setShowMobileMenu((prev) => !prev);
-      setClicked((prev) => !prev);
-      document.documentElement.classList.toggle('no-scroll');
-    }
+    setShowMobileMenu((prev) => !prev);
+    setClicked((prev) => !prev);
+    document.documentElement.classList.toggle('no-scroll');
   };
 
   return (
@@ -30,23 +28,63 @@ const NavBar = ({ show }) => {
         <div></div>
       </div>
       <img className="logo" src={logo} alt="logo"></img>
-      <nav onClick={handleClick} className={showMobileMenu ? 'show' : ''}>
+      <nav className={showMobileMenu ? 'show' : ''}>
         <ul className="main-navigation">
           <li>
             <i className="fa fa-user"></i>
-            <a href="#about">About</a>
+            <Link
+              className="nav-link"
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={1000}
+              onClick={handleClick}
+            >
+              About
+            </Link>
           </li>
           <li>
             <i className="fa fa-suitcase" aria-hidden="true"></i>
-            <a href="#projects">Work</a>
+            <Link
+              className="nav-link"
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={1000}
+              onClick={handleClick}
+            >
+              Work
+            </Link>
           </li>
           <li>
             <i className="fa fa-laptop"></i>
-            <a href="#skills">Skills</a>
+            <Link
+              className="nav-link"
+              to="skills"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={1000}
+              onClick={handleClick}
+            >
+              Skills
+            </Link>
           </li>
           <li>
             <i className="fa fa-comment"></i>
-            <a href="#contact">Contact</a>
+            <Link
+              className="nav-link"
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={1000}
+              onClick={handleClick}
+            >
+              Contact
+            </Link>
           </li>
         </ul>
       </nav>

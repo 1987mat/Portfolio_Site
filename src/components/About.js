@@ -1,5 +1,6 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
+import { Link } from 'react-scroll';
 import headshot from '../images/photo.jpg';
 
 const About = React.forwardRef((props, ref) => {
@@ -24,9 +25,16 @@ const About = React.forwardRef((props, ref) => {
           learning and exploring new ways of creating simple but effective
           things.
         </p>
-        <a href="#projects" className="btn-about">
+        <Link
+          to="projects"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={1000}
+          className="btn-about"
+        >
           Projects
-        </a>
+        </Link>
       </div>
       <div className="photo-wrapper" ref={ref2}>
         <div className="border top left"></div>
