@@ -508,6 +508,7 @@ footer span {
 @media screen and (min-width: 320px) {
   html {
     font-size: 40%;
+    overflow: scroll;
   }
 
   html.no-scroll {
@@ -588,6 +589,7 @@ footer span {
     opacity: 0;
     transition: transform 250ms ease-in, opacity 250ms ease-in;
     width: 100%;
+    min-height: 100%;
   }
 
   .main-navigation {
@@ -673,7 +675,7 @@ footer span {
     opacity: 1;
     transform: initial;
     width: auto;
-    /* min-height: auto; */
+    min-height: auto;
   }
 
   .main-navigation {
