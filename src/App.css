@@ -10,6 +10,7 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 body {
@@ -352,7 +353,6 @@ main {
 
 .github-icon {
   font-size: 1.5rem;
-  /* padding-top: 10px; */
   transition: transform 0.2s ease-in-out;
 }
 
@@ -462,6 +462,8 @@ textarea {
   border-radius: 2px;
   border: 0.5px solid gray;
   border-top: none;
+  background-color: #fefefa;
+  outline: none;
 }
 
 textarea {
@@ -475,9 +477,9 @@ textarea {
   appearance: none;
   border: none;
   font-weight: bold;
-  padding: 1.5em;
+  padding: 1em;
   transition: transform 0.2s ease-in-out;
-  background-color: gainsboro;
+  background-color: whitesmoke;
 }
 
 .submit-btn:hover {
@@ -586,7 +588,6 @@ footer span {
     opacity: 0;
     transition: transform 250ms ease-in, opacity 250ms ease-in;
     width: 100%;
-    /* min-height: 100vh; */
   }
 
   .main-navigation {
@@ -672,7 +673,7 @@ footer span {
     opacity: 1;
     transform: initial;
     width: auto;
-    min-height: auto;
+    /* min-height: auto; */
   }
 
   .main-navigation {
