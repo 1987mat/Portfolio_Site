@@ -7,9 +7,16 @@
 }
 
 html {
-  overflow-x: hidden;
-  overflow: scroll;
-  -webkit-overflow-scrolling: touch;
+  min-width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+  margin: 0;
 }
 
 body {
@@ -486,13 +493,6 @@ footer span {
 
 /* Mobile */
 @media screen and (min-width: 320px) {
-  html.no-scroll {
-    /* overflow: hidden;
-    height: 100vh;
-    margin: 0; */
-    touch-action: none;
-  }
-
   .hamburger {
     position: fixed;
     left: 0;
@@ -624,7 +624,7 @@ footer span {
   }
 
   .main-navigation {
-    padding: 5em;
+    padding: 4em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -635,7 +635,7 @@ footer span {
     opacity: 0;
     list-style-type: none;
     font-weight: bold;
-    font-size: 0.5em;
+    font-size: 1rem;
   }
 
   .main-navigation li .nav-link,
@@ -693,18 +693,28 @@ footer span {
   }
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 374px) {
   .main-navigation {
+    padding: 5em;
     gap: 8em;
   }
 
   .main-navigation li {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
   }
 }
 
 /* Mobile Land */
 @media screen and (min-width: 480px) {
+  .main-navigation {
+    padding: 6em;
+    gap: 10em;
+  }
+
+  .main-navigation li {
+    font-size: 1.5rem;
+  }
+
   #about {
     padding-bottom: 20em;
   }
@@ -737,8 +747,12 @@ footer span {
 /* Tablet */
 @media screen and (min-width: 768px) and (orientation: portrait) {
   .main-navigation {
-    padding: 8em;
+    padding: 10em;
     gap: 12em;
+  }
+
+  .main-navigation li {
+    font-size: 1.5rem;
   }
 
   .heading-wrapper {
