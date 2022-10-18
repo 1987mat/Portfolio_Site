@@ -7,7 +7,7 @@
 }
 
 html {
-  min-width: 100%;
+  max-width: 100%;
   min-height: 100%;
   margin: 0;
   padding: 0;
@@ -20,8 +20,7 @@ html {
 }
 
 body {
-  overflow-x: hidden;
-  width: 100%;
+  max-width: 100%;
   height: 100%;
 }
 
@@ -107,16 +106,16 @@ header {
 }
 
 main {
+  max-width: 100%;
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  justify-content: center;
 }
 
 /* ABOUT SECTION */
 #about {
   background: rgb(11, 3, 42);
   height: 100vh;
-  width: 100vw;
   padding: 5em;
   padding-bottom: 15em;
   display: flex;
@@ -251,7 +250,6 @@ main {
   padding-top: 4em;
   padding-bottom: 5em;
   background-color: #fefefa;
-  height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -271,7 +269,7 @@ main {
   justify-content: center;
   align-items: center;
   gap: 5em;
-  padding: 3em;
+  padding: 10em 5em 10em 5em;
 }
 
 .project-container {
@@ -380,13 +378,13 @@ main {
   gap: 3em;
   padding: 10em 5em 10em 5em;
   opacity: 0;
-  transform: translateX(100px);
+  transform: translateY(150px);
   transition: transform 0.5s ease-in-out, opacity 0.9s ease-in-out;
 }
 
 .icons-wrapper.show {
   opacity: 1;
-  transform: translateX(0);
+  transform: translateY(0);
 }
 
 .icons-wrapper svg {
@@ -439,7 +437,7 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 70%;
+  width: 60%;
 }
 
 input,
@@ -475,7 +473,7 @@ textarea {
 }
 
 footer {
-  width: 100%;
+  max-width: 100%;
   height: 4em;
   background: rgb(11, 3, 42);
   display: flex;
@@ -794,6 +792,10 @@ footer span {
     height: 5em;
   }
 
+  .main-navigation {
+    padding: 0 5em;
+  }
+
   .hamburger {
     display: none;
   }
@@ -806,6 +808,7 @@ footer span {
     left: 15px;
     top: 15px;
   }
+
   .logo:hover {
     cursor: pointer;
   }
@@ -818,7 +821,7 @@ footer span {
     background-color: transparent;
     position: relative;
     top: 0;
-    left: 60px;
+    left: 0;
     opacity: 1;
     transform: initial;
     width: auto;

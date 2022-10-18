@@ -67,13 +67,16 @@ function App() {
       );
 
       observer.observe(heading.current);
-      observer.observe(headShot.current);
       observer.observe(skills.current);
       observer.observe(contact.current);
 
       projectCards.current.forEach((card) => {
         observer.observe(card);
       });
+
+      if (window.innerWidth >= 992) {
+        observer.observe(headShot.current);
+      }
     },
     [projectCards],
     heading,
