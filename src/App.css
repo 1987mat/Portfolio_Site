@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap');
 
 * {
   font-family: 'Montserrat', sans-serif;
@@ -48,6 +47,7 @@ header {
   padding-right: 1em;
 }
 
+/* Hide Navbar on scroll */
 .hidden {
   top: -5em;
 }
@@ -251,12 +251,6 @@ main {
   align-items: center;
 }
 
-.projects-title {
-  font-size: 3rem;
-  text-align: center;
-  margin: 1.5em;
-}
-
 .projects-section-title {
   font-size: 3rem;
   text-align: center;
@@ -365,12 +359,6 @@ main {
   align-items: center;
 }
 
-.skills-title {
-  font-size: 3rem;
-  text-align: center;
-  margin: 1.5em;
-}
-
 .skills-section-title {
   font-size: 3rem;
   text-align: center;
@@ -430,12 +418,6 @@ main {
 .success-message {
   font-weight: bold;
   padding-bottom: 1em;
-}
-
-.contact-title {
-  font-size: 3rem;
-  text-align: center;
-  margin: 1.5em;
 }
 
 .form-container {
@@ -703,6 +685,7 @@ footer span {
   .skills-title,
   .contact-title {
     font-size: 2rem;
+    text-align: center;
   }
 
   footer {
