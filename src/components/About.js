@@ -29,7 +29,7 @@ const About = React.forwardRef((props, ref) => {
           to="projects"
           spy={true}
           smooth={true}
-          offset={50}
+          offset={-50}
           duration={1000}
           className="btn-about"
         >

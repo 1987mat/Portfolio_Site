@@ -59,6 +59,7 @@ function App() {
         (entries) => {
           entries.forEach((entry) => {
             entry.target.classList.toggle('show', entry.isIntersecting);
+            if (entry.isIntersecting) observer.unobserve(entry.target);
           });
         },
         {
