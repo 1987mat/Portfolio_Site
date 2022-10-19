@@ -805,7 +805,7 @@ footer span {
     background-color: transparent;
     position: relative;
     top: 0;
-    left: 20px;
+    left: 60px;
     opacity: 1;
     transform: initial;
     width: auto;
@@ -814,7 +814,7 @@ footer span {
 
   .main-navigation {
     flex-direction: row;
-    gap: 7em;
+    gap: 5em;
   }
 
   .main-navigation li {
