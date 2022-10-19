@@ -17,14 +17,14 @@ function App() {
 
       // Hide Navbar only on smaller screens
       if (window.innerWidth >= 992) {
-        // Scroll down and hide navbar
+        // Hide navbar
         if (prevScrollY.current < currentScrollY && showHeader) {
           setShowHeader(false);
         }
-        // Scroll Up and show navbar
+        // Show navbar
         if (
-          (prevScrollY.current > currentScrollY && !showHeader) ||
-          (window.pageYOffset < 50 && !showHeader)
+          (prevScrollY.current > currentScrollY || window.pageYOffset < 50) &&
+          !showHeader
         ) {
           setShowHeader(true);
         }
@@ -58,7 +58,9 @@ function App() {
       const observer = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
+            // Add fade in effect
             entry.target.classList.toggle('show', entry.isIntersecting);
+            // Remove fade in
             if (entry.isIntersecting) observer.unobserve(entry.target);
           });
         },
