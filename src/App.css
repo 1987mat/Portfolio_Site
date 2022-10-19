@@ -610,7 +610,7 @@ footer span {
   }
 
   .main-navigation {
-    padding: 4em;
+    padding: 3.5em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -681,19 +681,19 @@ footer span {
 
 @media screen and (min-width: 374px) {
   .main-navigation {
-    padding: 5em;
+    padding: 4.5em;
     gap: 8em;
   }
 
   .main-navigation li {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 
 /* Mobile Land */
 @media screen and (min-width: 480px) {
   .main-navigation {
-    padding: 6em;
+    padding: 5em;
     gap: 10em;
   }
 
@@ -733,7 +733,7 @@ footer span {
 /* Tablet */
 @media screen and (min-width: 768px) and (orientation: portrait) {
   .main-navigation {
-    padding: 10em;
+    padding: 8em;
     gap: 12em;
   }
 
