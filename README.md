@@ -14,12 +14,9 @@
 
 ## Built With
 
-- React JS
-- Node
-- NPM
-- Webpack
 - HTML
 - CSS
+- React
 
 ## Author
 
