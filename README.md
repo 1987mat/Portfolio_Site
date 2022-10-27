@@ -1,6 +1,6 @@
 # Portfolio Website
 
-<p> Personal portfolio website built with React JS functional components, hooks and Intersection Observer API for fade in animation.</p>
+<p> Personal portfolio website built with React functional components and hooks.</p>
 
 ## Links
 
