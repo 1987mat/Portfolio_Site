@@ -34,18 +34,14 @@ const Projects = React.forwardRef((props, ref) => {
                   ></i>
                 </p>
               </a>
-              {project.github ? (
-                <a
-                  href={project.github ? project.github : ''}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="github-icon"
-                >
-                  <i className="fa fa-github"></i>
-                </a>
-              ) : (
-                ''
-              )}
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="github-icon"
+              >
+                <i className="fa fa-github"></i>
+              </a>
             </div>
           </div>
         ))}

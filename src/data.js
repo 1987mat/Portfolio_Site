@@ -13,7 +13,7 @@ export const projects = [
     description: 'Fully customized Wordpress site',
     image: fitwell,
     link: 'https://www.fitwellgym.com',
-    github: '',
+    github: 'https://github.com/1987mat/FitWellGym',
   },
   {
     title: 'Resume Builder App',
@@ -27,7 +27,7 @@ export const projects = [
     description: 'Wordpress Coffee Shop Site',
     image: cafeDolce,
     link: 'https://www.cafedolce.org/',
-    github: '',
+    github: 'https://github.com/1987mat/Cafe_Dolce',
   },
 
   {
