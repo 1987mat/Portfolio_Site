@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import logo from '../images/logo.png';
-import cv from '../Matteo Calvani Resume.pdf';
+import cv from '../resume.pdf';
 
 const NavBar = ({ show }) => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -92,7 +92,7 @@ const NavBar = ({ show }) => {
           </li>
         </ul>
       </nav>
-      <a className="resume-link" href={cv} download>
+      <a className="resume-link" href={cv} download="Matteo Calvani Resume">
         <i className="fa fa-download"></i>
         <span>Resume</span>
       </a>
