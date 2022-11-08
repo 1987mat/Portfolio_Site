@@ -841,6 +841,10 @@ footer span {
     cursor: pointer;
   }
 
+  .nav-link.active {
+    color: red;
+  }
+
   .main-navigation i {
     color: whitesmoke;
   }
