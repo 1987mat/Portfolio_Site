@@ -8,7 +8,6 @@ const About = React.forwardRef((props, ref) => {
   return (
     <section id="about">
       <div className="heading-wrapper" ref={ref1}>
-        <p className="small-title">Hi, I'm</p>
         <h1 className="main-title">Matteo Calvani</h1>
         <div className="type-writer-wrapper">
           <span style={{ color: '#f08000', fontWeight: 'lighter' }}>Web</span>
