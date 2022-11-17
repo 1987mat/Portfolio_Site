@@ -128,13 +128,11 @@ header {
   justify-content: center;
   align-items: flex-start;
   padding-top: 12em;
-  opacity: 0;
-  transform: translateY(150px);
-  transition: transform 0.9s ease-in-out, opacity 0.9s ease-in-out;
+  transform: translateY(50px);
+  transition: transform 0.9s ease;
 }
 
 .heading-wrapper.show {
-  opacity: 1;
   transform: translateY(0);
 }
 
@@ -185,13 +183,11 @@ header {
 .photo-wrapper {
   padding: 2em;
   position: relative;
-  opacity: 1;
-  transform: translateY(-150px);
-  transition: transform 0.9s ease-in-out, opacity 0.9s ease-in-out;
+  transform: translateY(50px);
+  transition: transform 0.9s ease;
 }
 
 .photo-wrapper.show {
-  opacity: 1;
   transform: translateY(0);
 }
 
@@ -268,13 +264,11 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  opacity: 0;
   transform: translateY(50px);
-  transition: transform 0.9s ease-in-out, opacity 0.9s ease-in-out;
+  transition: transform 0.9s ease;
 }
 
 .project-container.show {
-  opacity: 1;
   transform: translateY(0);
 }
 
@@ -367,13 +361,11 @@ header {
   justify-content: center;
   gap: 3em;
   padding: 10em 5em 10em 5em;
-  opacity: 0;
-  transform: translateY(150px);
-  transition: transform 0.5s ease-in-out, opacity 0.9s ease-in-out;
+  transform: translateY(50px);
+  transition: transform 0.9s ease-in-out;
 }
 
 .icons-wrapper.show {
-  opacity: 1;
   transform: translateY(0);
 }
 
@@ -400,13 +392,11 @@ header {
   justify-content: center;
   align-items: center;
   padding-bottom: 10em;
-  opacity: 0;
   transform: translateY(100px);
-  transition: transform 0.5s ease-in-out, opacity 0.9s ease-in-out;
+  transition: transform 0.9s ease;
 }
 
 .contact-wrapper.show {
-  opacity: 1;
   transform: translateY(0);
 }
 
