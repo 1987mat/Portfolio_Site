@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/Portfolio_Site/static/css/main.4b9917d6.css",
-    "main.js": "/Portfolio_Site/static/js/main.3a84a499.js",
+    "main.js": "/Portfolio_Site/static/js/main.7eced08e.js",
     "static/js/787.37faa4c4.chunk.js": "/Portfolio_Site/static/js/787.37faa4c4.chunk.js",
+    "static/media/sydneyranee.png": "/Portfolio_Site/static/media/sydneyranee.ad74530078b24813d7ef.png",
     "static/media/restaurant.png": "/Portfolio_Site/static/media/restaurant.8c29d9285224dec2bcac.png",
     "static/media/library.png": "/Portfolio_Site/static/media/library.61d99592cf930f9d636d.png",
     "static/media/fitwell.png": "/Portfolio_Site/static/media/fitwell.7dc4db34e2af742b50cc.png",
@@ -16,11 +17,11 @@
     "static/media/resume.png": "/Portfolio_Site/static/media/resume.9c71b6f553fd2e7a1c30.png",
     "index.html": "/Portfolio_Site/index.html",
     "main.4b9917d6.css.map": "/Portfolio_Site/static/css/main.4b9917d6.css.map",
-    "main.3a84a499.js.map": "/Portfolio_Site/static/js/main.3a84a499.js.map",
+    "main.7eced08e.js.map": "/Portfolio_Site/static/js/main.7eced08e.js.map",
     "787.37faa4c4.chunk.js.map": "/Portfolio_Site/static/js/787.37faa4c4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4b9917d6.css",
-    "static/js/main.3a84a499.js"
+    "static/js/main.7eced08e.js"
   ]
 }
