@@ -1,3 +1,4 @@
+import sydneyRanee from './images/sydneyranee.png';
 import fitwell from './images/fitwell.png';
 import github from './images/github.png';
 import cafeDolce from './images/cafe_dolce.png';
@@ -8,6 +9,13 @@ import library from './images/library.png';
 import weatherApp from './images/weather_app.png';
 
 export const projects = [
+  {
+    title: 'Sydney Raneé Website',
+    description: 'Artist official Wordpress site',
+    image: sydneyRanee,
+    link: 'https://www.sydneyranee.com',
+    github: 'https://github.com/1987mat/Sydney_Ranee_Official',
+  },
   {
     title: 'Fit&Well Gym ',
     description: 'Fully customized Wordpress site',
