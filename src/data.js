@@ -1,7 +1,7 @@
 import sydneyRanee from './images/sydneyranee.png';
 import fitwell from './images/fitwell.png';
 import github from './images/github.png';
-import cafeDolce from './images/cafe_dolce.png';
+import cafeDolce from './images/cafedolce.png';
 import resume from './images/resume.png';
 import toDoList from './images/toDoList.png';
 import restaurant from './images/restaurant.png';
@@ -11,7 +11,7 @@ import weatherApp from './images/weather_app.png';
 export const projects = [
   {
     title: 'Sydney Raneé Website',
-    description: 'Artist official Wordpress site',
+    description: 'Official Artist Wordpress site',
     image: sydneyRanee,
     link: 'https://www.sydneyranee.com',
     github: 'https://github.com/1987mat/Sydney_Ranee_Official',
@@ -37,7 +37,6 @@ export const projects = [
     link: 'https://www.cafedolce.org/',
     github: 'https://github.com/1987mat/Cafe_Dolce',
   },
-
   {
     title: 'Github Finder App',
     description: 'Search and display github users profile',

@@ -69,7 +69,7 @@ header {
   background-color: transparent;
   padding: 0.5em;
   border: 1px solid #f08000;
-  border-radius: 2px;
+  border-radius: 5px;
   font-weight: 700;
   transition: transform 0.2s ease-in-out;
 }
@@ -165,7 +165,7 @@ header {
   text-align: center;
   margin-top: 1.2em;
   border: none;
-  border-radius: 2px;
+  border-radius: 5px;
   padding: 1em;
   width: 12em;
   font-weight: 700;
@@ -279,10 +279,10 @@ header {
 .screenshot {
   text-align: center;
   border: none;
-  width: 20em;
+  width: 22em;
   height: 12em;
   border-radius: 10px;
-  box-shadow: 2px 1px 1px gray;
+  box-shadow: 0 0 8px #282828;
   opacity: 1;
   transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
