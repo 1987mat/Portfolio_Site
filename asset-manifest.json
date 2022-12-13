@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/Portfolio_Site/static/css/main.4b9917d6.css",
-    "main.js": "/Portfolio_Site/static/js/main.7eced08e.js",
+    "main.css": "/Portfolio_Site/static/css/main.275c95bd.css",
+    "main.js": "/Portfolio_Site/static/js/main.43c23ac5.js",
     "static/js/787.37faa4c4.chunk.js": "/Portfolio_Site/static/js/787.37faa4c4.chunk.js",
+    "static/media/cafedolce.png": "/Portfolio_Site/static/media/cafedolce.6594179adf432232bbc6.png",
     "static/media/sydneyranee.png": "/Portfolio_Site/static/media/sydneyranee.ad74530078b24813d7ef.png",
+    "static/media/fitwell.png": "/Portfolio_Site/static/media/fitwell.38affe71a4c4110349ea.png",
     "static/media/restaurant.png": "/Portfolio_Site/static/media/restaurant.8c29d9285224dec2bcac.png",
     "static/media/library.png": "/Portfolio_Site/static/media/library.61d99592cf930f9d636d.png",
-    "static/media/fitwell.png": "/Portfolio_Site/static/media/fitwell.7dc4db34e2af742b50cc.png",
     "static/media/toDoList.png": "/Portfolio_Site/static/media/toDoList.42578d2bc51d34bfdef5.png",
     "static/media/weather_app.png": "/Portfolio_Site/static/media/weather_app.d450fec721c9ce4be7b7.png",
-    "static/media/cafe_dolce.png": "/Portfolio_Site/static/media/cafe_dolce.6eed678ec84a6909bbd4.png",
     "static/media/logo.png": "/Portfolio_Site/static/media/logo.4846b97835f23d9d6105.png",
     "static/media/resume.pdf": "/Portfolio_Site/static/media/resume.f589b4ccc54f5cf94ba0.pdf",
     "static/media/photo.jpg": "/Portfolio_Site/static/media/photo.97c4668b373b018d2b15.jpg",
     "static/media/github.png": "/Portfolio_Site/static/media/github.f3e5ac5089cf616530e8.png",
     "static/media/resume.png": "/Portfolio_Site/static/media/resume.9c71b6f553fd2e7a1c30.png",
     "index.html": "/Portfolio_Site/index.html",
-    "main.4b9917d6.css.map": "/Portfolio_Site/static/css/main.4b9917d6.css.map",
-    "main.7eced08e.js.map": "/Portfolio_Site/static/js/main.7eced08e.js.map",
+    "main.275c95bd.css.map": "/Portfolio_Site/static/css/main.275c95bd.css.map",
+    "main.43c23ac5.js.map": "/Portfolio_Site/static/js/main.43c23ac5.js.map",
     "787.37faa4c4.chunk.js.map": "/Portfolio_Site/static/js/787.37faa4c4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4b9917d6.css",
-    "static/js/main.7eced08e.js"
+    "static/css/main.275c95bd.css",
+    "static/js/main.43c23ac5.js"
   ]
 }
