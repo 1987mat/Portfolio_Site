@@ -900,6 +900,10 @@ footer span {
     color: whitesmoke;
   }
 
+  .sm-icons {
+    margin-top: 0;
+  }
+
   #about {
     flex-direction: row;
     justify-content: space-between;
