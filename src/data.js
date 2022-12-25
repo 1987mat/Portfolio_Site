@@ -1,7 +1,8 @@
 import sydneyRanee from './images/sydneyranee.png';
+import sydneyStore from './images/sydneystore.png';
+import cafeDolce from './images/cafedolce.png';
 import fitwell from './images/fitwell.png';
 import github from './images/github.png';
-import cafeDolce from './images/cafedolce.png';
 import resume from './images/resume.png';
 import toDoList from './images/toDoList.png';
 import restaurant from './images/restaurant.png';
@@ -15,6 +16,13 @@ export const projects = [
     image: sydneyRanee,
     link: 'https://www.sydneyranee.com',
     github: 'https://github.com/1987mat/Sydney_Ranee_Official',
+  },
+  {
+    title: 'Sydney Raneé Store',
+    description: 'Official Artist WooCommerce store',
+    image: sydneyStore,
+    link: 'https://sydneyraneeshop.com',
+    github: 'https://github.com/1987mat/Sydney-Ranee-Store',
   },
   {
     title: 'Fit&Well Gym ',
