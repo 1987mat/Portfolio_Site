@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import logo from '../images/logo.png';
-import cv from '../resume.pdf';
+import cv from '../resume2.pdf';
 
 const NavBar = ({ show }) => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
