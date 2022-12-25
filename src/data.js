@@ -24,18 +24,18 @@ export const projects = [
     github: 'https://github.com/1987mat/FitWellGym',
   },
   {
-    title: 'Resume Builder App',
-    description: 'Create your resume. Built with React JS',
-    image: resume,
-    link: 'https://1987mat.github.io/CV_Application/',
-    github: 'https://github.com/1987mat/CV_Application',
-  },
-  {
     title: 'Cafe`Dolce',
     description: 'Wordpress Coffee Shop Site',
     image: cafeDolce,
     link: 'https://www.cafedolce.org/',
     github: 'https://github.com/1987mat/Cafe_Dolce',
+  },
+  {
+    title: 'Resume Builder App',
+    description: 'Create your resume. Built with React JS',
+    image: resume,
+    link: 'https://1987mat.github.io/CV_Application/',
+    github: 'https://github.com/1987mat/CV_Application',
   },
   {
     title: 'Github Finder App',

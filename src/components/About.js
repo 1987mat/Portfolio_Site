@@ -34,12 +34,14 @@ const About = React.forwardRef((props, ref) => {
           WORK
         </Link>
       </div>
-      <div className="photo-wrapper" ref={ref2}>
-        <div className="border top left"></div>
-        <div className="border top right"></div>
-        <div className="border bottom left"></div>
-        <div className="border bottom right"></div>
-        <img src={headshot} alt="headshot"></img>
+      <div class="photo-container">
+        <div className="photo-wrapper" ref={ref2}>
+          <div className="border top left"></div>
+          <div className="border top right"></div>
+          <div className="border bottom left"></div>
+          <div className="border bottom right"></div>
+          <img src={headshot} alt="headshot"></img>
+        </div>
       </div>
     </section>
   );

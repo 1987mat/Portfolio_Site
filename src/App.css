@@ -87,7 +87,6 @@ header {
 
 .sm-icons {
   display: flex;
-  gap: 3em;
 }
 
 .sm-icons .github i,
@@ -96,12 +95,10 @@ header {
 }
 
 .sm-icons .github {
-  font-size: 1.5rem;
   transition: transform 0.3s ease-in-out;
 }
 
 .sm-icons .linkedin {
-  font-size: 1.3rem;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -115,20 +112,16 @@ header {
 #about {
   background: rgb(11, 3, 42);
   height: 100vh;
-  padding: 5em;
-  padding-bottom: 15em;
   display: flex;
   justify-content: center;
-  gap: 3em;
 }
 
 .heading-wrapper {
   display: flex;
-  min-width: 25em;
+  height: fit-content;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 12em;
   transform: translateY(50px);
   transition: transform 0.9s ease;
 }
@@ -145,8 +138,8 @@ header {
 .heading-text {
   padding-top: 1em;
   font-weight: 500;
-  line-height: 1.6;
-  max-width: 100%;
+  line-height: 1.8;
+  width: 100%;
 }
 
 .main-title {
@@ -157,9 +150,12 @@ header {
   letter-spacing: 6px;
 }
 
+.type-writer-wrapper {
+  gap: 0.3em;
+}
+
 .type-writer-wrapper span {
   color: whitesmoke;
-  font-size: 3rem;
 }
 
 .heading-wrapper a {
@@ -179,6 +175,10 @@ header {
 .heading-wrapper a:hover {
   cursor: pointer;
   background-color: #f08000;
+}
+
+.photo-container {
+  height: fit-content;
 }
 
 .photo-wrapper {
@@ -285,11 +285,11 @@ header {
   border-radius: 10px;
   box-shadow: 0 0 8px #282828;
   opacity: 1;
-  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  transition: transform 0.9s ease, opacity 0.6s ease;
 }
 
 .screenshot:hover {
-  transform: scale(1.01);
+  transform: scale(1.03);
   opacity: 0.85;
 }
 
@@ -407,6 +407,7 @@ header {
 }
 
 .form-container {
+  margin-top: 4em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -418,7 +419,7 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 60%;
+  width: 70vw;
 }
 
 input,
@@ -430,6 +431,7 @@ textarea {
   border-top: none;
   background-color: #fefefa;
   outline: none;
+  box-shadow: 0 0 6px gray;
 }
 
 textarea {
@@ -541,12 +543,13 @@ footer span {
   }
 
   .sm-icons {
-    gap: 1.5em;
+    gap: 2em;
+    margin-top: 0.6em;
   }
 
   .sm-icons .github,
   .sm-icons .linkedin {
-    font-size: 1em;
+    font-size: 1.2rem;
   }
 
   nav {
@@ -622,19 +625,25 @@ footer span {
     color: whitesmoke;
   }
 
+  #about {
+    padding: 5em;
+  }
+
   .heading-wrapper {
-    min-width: 6em;
-    gap: 1em;
+    height: fit-content;
+    gap: 0.8em;
     justify-content: center;
     align-items: center;
+    margin-top: 2em;
   }
 
   .heading-wrapper .main-title {
     text-align: center;
+    font-size: 80%;
   }
 
   .heading-wrapper p {
-    font-size: 0.5rem;
+    font-size: 70%;
     text-align: center;
   }
 
@@ -646,10 +655,15 @@ footer span {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 0.5em;
   }
 
   .type-writer-wrapper span {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+  }
+
+  .heading-wrapper a {
+    font-size: 1rem;
   }
 
   .photo-wrapper {
@@ -659,7 +673,6 @@ footer span {
   .projects-title,
   .skills-title,
   .contact-title {
-    font-size: 2rem;
     text-align: center;
   }
 
@@ -668,6 +681,7 @@ footer span {
   }
 }
 
+/* Iphone 8 */
 @media screen and (min-width: 374px) {
   .main-navigation {
     padding: 4.5em;
@@ -676,6 +690,29 @@ footer span {
 
   .main-navigation li {
     font-size: 1rem;
+  }
+
+  .heading-wrapper {
+    gap: 2em;
+  }
+
+  .heading-wrapper .main-title {
+    font-size: 2.2rem;
+  }
+
+  .heading-wrapper p {
+    font-size: 80%;
+  }
+}
+
+/* Iphone 8 Plus */
+@media screen and (min-width: 413px) {
+  .heading-wrapper {
+    gap: 2em;
+  }
+
+  .heading-wrapper .main-title {
+    font-size: 2.5rem;
   }
 }
 
@@ -690,28 +727,35 @@ footer span {
     font-size: 1.5rem;
   }
 
-  #about {
-    padding-bottom: 20em;
-  }
-
   .heading-wrapper {
-    padding-top: 8em;
-    gap: 1.5em;
+    gap: 0.5em;
+    margin-top: -0.5em;
   }
 
   .heading-wrapper .main-title {
     font-size: 1.5rem;
   }
 
+  .heading-text {
+    width: 70%;
+  }
+
+  .heading-wrapper p {
+    font-size: 60%;
+  }
+
   .type-writer-wrapper {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 1em;
   }
 
-  .btn-about {
-    font-size: 0.8rem;
+  .type-writer-wrapper span {
+    font-size: 1rem;
+  }
+
+  .heading-wrapper a {
+    font-size: 80%;
   }
 }
 
@@ -727,16 +771,16 @@ footer span {
   }
 
   .heading-wrapper {
-    padding-top: 2em;
-    gap: 3em;
+    gap: 4em;
+    margin-top: 5em;
   }
 
   .heading-wrapper .main-title {
-    font-size: 2rem;
+    font-size: 3.8rem;
   }
 
   .heading-wrapper p {
-    font-size: 0.8rem;
+    font-size: 1.5rem;
   }
 
   .type-writer-wrapper {
@@ -746,12 +790,35 @@ footer span {
     gap: 1em;
   }
 
-  .btn-about {
-    font-size: 1rem;
+  .type-writer-wrapper span {
+    font-size: 2.5rem;
+  }
+
+  .heading-wrapper a {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 799px) {
+  .heading-wrapper {
+    margin-top: 5em;
+    gap: 1em;
+  }
+
+  .heading-wrapper .main-title {
+    font-size: 2.8rem;
   }
 
   .heading-text {
-    width: 60%;
+    width: 50%;
+  }
+
+  .type-writer-wrapper span {
+    font-size: 2rem;
+  }
+
+  .heading-wrapper a {
+    font-size: 1rem;
   }
 }
 
@@ -826,70 +893,25 @@ footer span {
   }
 
   #about {
-    padding-top: 15em;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-top: 8em;
+    gap: 3em;
   }
 
   .heading-wrapper {
-    min-width: 25em;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 2em;
-  }
-
-  .heading-wrapper .main-title {
-    font-size: 3rem;
-  }
-
-  .heading-wrapper p {
-    font-size: 1rem;
-    text-align: start;
-  }
-
-  .heading-text {
-    width: 70%;
-  }
-
-  .btn-about {
-    font-size: 1rem;
-  }
-
-  .photo-wrapper {
-    display: flex;
-    width: 25em;
-    align-self: initial;
-  }
-
-  .projects-title,
-  .skills-title,
-  .contact-title {
-    font-size: 3rem;
-  }
-}
-
-/* Larger Screens */
-@media screen and (min-width: 1200px) {
-  #about {
-    padding-top: 22em;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .heading-wrapper {
-    min-width: 25em;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 0.5em;
-    padding-bottom: 10em;
+    width: 70vw;
+    margin-top: 0;
   }
 
   .heading-wrapper .main-title {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
+    text-align: initial;
   }
 
   .heading-wrapper p {
@@ -902,17 +924,29 @@ footer span {
   }
 
   .type-writer-wrapper span {
-    color: whitesmoke;
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
-  .btn-about {
-    font-size: 1rem;
+  .heading-wrapper a {
+    font-size: 1.2rem;
   }
 
   .photo-wrapper {
     display: flex;
-    align-self: initial;
+    width: 25vw;
+  }
+
+  .projects-title,
+  .skills-title,
+  .contact-title {
+    font-size: 3rem;
+  }
+}
+
+/* Larger Screens */
+@media screen and (min-width: 1200px) {
+  .heading-wrapper .main-title {
+    font-size: 4.5rem;
   }
 
   .projects-title,
