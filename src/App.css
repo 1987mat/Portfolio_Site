@@ -87,6 +87,8 @@ header {
 
 .sm-icons {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sm-icons .github i,
@@ -99,6 +101,7 @@ header {
 }
 
 .sm-icons .linkedin {
+  margin-bottom: 1px;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -487,7 +490,7 @@ footer span {
   }
 
   .hamburger div {
-    top: 10px;
+    top: 5px;
     position: relative;
     width: 25px;
     height: 4px;
@@ -544,8 +547,9 @@ footer span {
   }
 
   .sm-icons {
-    gap: 2em;
-    margin-top: 0.6em;
+    gap: 1.8em;
+    margin-top: 0;
+    margin-right: -1em;
   }
 
   .sm-icons .github,
@@ -607,11 +611,11 @@ footer span {
   }
 
   .main-navigation {
-    padding: 3.5em;
+    padding: 6em 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 7em;
+    gap: 5em;
   }
 
   .main-navigation li {
@@ -686,8 +690,7 @@ footer span {
 /* Iphone 8 */
 @media screen and (min-width: 374px) {
   .main-navigation {
-    padding: 4.5em;
-    gap: 8em;
+    gap: 6em;
   }
 
   .main-navigation li {
@@ -705,6 +708,10 @@ footer span {
 
 /* Iphone 8 Plus */
 @media screen and (min-width: 413px) {
+  .main-navigation {
+    gap: 8em;
+  }
+
   .heading-wrapper {
     gap: 2em;
   }
@@ -724,10 +731,6 @@ footer span {
   .main-navigation li {
     font-size: 1.5rem;
   }
-
-  /* .heading-wrapper {
-    gap: 0.5em;
-  } */
 
   .heading-wrapper .main-title {
     font-size: 1.5rem;
@@ -902,13 +905,14 @@ footer span {
 
   .sm-icons {
     margin-top: 0;
+    margin-right: 0;
   }
 
   #about {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 4em;
+    padding: 0 5em;
     gap: 3em;
   }
 
@@ -918,7 +922,7 @@ footer span {
     align-items: flex-start;
     gap: 0.5em;
     width: 70vw;
-    margin-top: 0;
+    margin-top: -2em;
   }
 
   .heading-wrapper .main-title {
@@ -946,6 +950,7 @@ footer span {
   .photo-wrapper {
     display: flex;
     width: 25vw;
+    margin-bottom: 2em;
   }
 
   .projects-title,
@@ -957,17 +962,36 @@ footer span {
 
 /* Larger Screens */
 @media screen and (min-width: 1200px) {
-  .heading-wrapper {
-    margin-top: 0;
+  #about {
+    padding: 0 5em;
   }
 
   .heading-wrapper .main-title {
     font-size: 4.5rem;
   }
 
+  .photo-wrapper {
+    margin-top: 5em;
+  }
+
   .projects-title,
   .skills-title,
   .contact-title {
     font-size: 3rem;
+  }
+}
+
+/* Larger Screens */
+@media screen and (min-width: 2073px) {
+  #about {
+    padding: 0 12em;
+  }
+
+  .heading-wrapper {
+    gap: 4em;
+  }
+
+  .heading-text {
+    width: 50%;
   }
 }
