@@ -5,7 +5,6 @@ import fitwell from './images/fitwell.png';
 import github from './images/github.png';
 import resume from './images/resume.png';
 import toDoList from './images/toDoList.png';
-import restaurant from './images/restaurant.png';
 import library from './images/library.png';
 import weatherApp from './images/weather_app.png';
 
@@ -58,13 +57,6 @@ export const projects = [
     image: toDoList,
     link: 'https://1987mat.github.io/ToDoList_ReactJS',
     github: 'https://github.com/1987mat/ToDoList_ReactJS',
-  },
-  {
-    title: 'Pizzeria Del Campo',
-    description: 'Restaurant brochure website',
-    image: restaurant,
-    link: 'https://1987mat.github.io/Restaurant_Page',
-    github: 'https://github.com/1987mat/Restaurant_Page',
   },
   {
     title: 'Library App',

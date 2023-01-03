@@ -33,7 +33,7 @@ const ContactForm = React.forwardRef((props, ref) => {
   return (
     <section id="contact">
       <div className="contact-wrapper" ref={ref}>
-        <h1 className="contact-title">Get in touch</h1>
+        <h1 className="contact-title">Get In Touch</h1>
         <span className="success-message">{message}</span>
         <div className="form-container">
           <form onSubmit={sendEmail}>
