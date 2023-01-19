@@ -34,7 +34,7 @@ const About = React.forwardRef((props, ref) => {
           WORK
         </Link>
       </div>
-      <div class="photo-container">
+      <div className="photo-container">
         <div className="photo-wrapper" ref={ref2}>
           <div className="border top left"></div>
           <div className="border top right"></div>
