@@ -96,22 +96,6 @@ const NavBar = ({ show }) => {
         <i className="fa fa-download"></i>
         <span>Resume</span>
       </a> */}
-      <div className="sm-icons">
-        <a
-          className="github"
-          href="https://github.com/1987mat"
-          target="e_blank"
-        >
-          <i className="fa fa-github"></i>
-        </a>
-        <a
-          className="linkedin"
-          href="https://www.linkedin.com/in/matteo-calvani-0802b0234/"
-          target="e_blank"
-        >
-          <i className="fa fa-linkedin" aria-hidden="true"></i>
-        </a>
-      </div>
     </header>
   );
 };
