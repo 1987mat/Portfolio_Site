@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/Portfolio_Site/static/css/main.4e1b6ae0.css",
-    "main.js": "/Portfolio_Site/static/js/main.0fdc86ce.js",
+    "main.js": "/Portfolio_Site/static/js/main.c11f7c0f.js",
     "static/js/787.37faa4c4.chunk.js": "/Portfolio_Site/static/js/787.37faa4c4.chunk.js",
     "static/media/cafedolce.png": "/Portfolio_Site/static/media/cafedolce.6594179adf432232bbc6.png",
     "static/media/sydneystore.png": "/Portfolio_Site/static/media/sydneystore.c06d05284f1cc59e2f5f.png",
     "static/media/fitwell.png": "/Portfolio_Site/static/media/fitwell.38affe71a4c4110349ea.png",
+    "static/media/glamour.png": "/Portfolio_Site/static/media/glamour.af892f8c10a3847c45c9.png",
     "static/media/sydneyranee.png": "/Portfolio_Site/static/media/sydneyranee.f6479d4ba0057fdcae70.png",
     "static/media/library.png": "/Portfolio_Site/static/media/library.61d99592cf930f9d636d.png",
     "static/media/toDoList.png": "/Portfolio_Site/static/media/toDoList.42578d2bc51d34bfdef5.png",
@@ -16,11 +17,11 @@
     "static/media/resume.png": "/Portfolio_Site/static/media/resume.9c71b6f553fd2e7a1c30.png",
     "index.html": "/Portfolio_Site/index.html",
     "main.4e1b6ae0.css.map": "/Portfolio_Site/static/css/main.4e1b6ae0.css.map",
-    "main.0fdc86ce.js.map": "/Portfolio_Site/static/js/main.0fdc86ce.js.map",
+    "main.c11f7c0f.js.map": "/Portfolio_Site/static/js/main.c11f7c0f.js.map",
     "787.37faa4c4.chunk.js.map": "/Portfolio_Site/static/js/787.37faa4c4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4e1b6ae0.css",
-    "static/js/main.0fdc86ce.js"
+    "static/js/main.c11f7c0f.js"
   ]
 }
