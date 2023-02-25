@@ -1,4 +1,5 @@
 import sydneyRanee from './images/sydneyranee.png';
+import glamourIcon from './images/glamour.png';
 import sydneyStore from './images/sydneystore.png';
 import cafeDolce from './images/cafedolce.png';
 import fitwell from './images/fitwell.png';
@@ -15,6 +16,13 @@ export const projects = [
     image: sydneyRanee,
     link: 'https://www.sydneyranee.com',
     github: 'https://github.com/1987mat/Sydney_Ranee_Official',
+  },
+  {
+    title: 'Fashion Online Store',
+    description: 'Wordpress/WooCommerce shop ',
+    image: glamourIcon,
+    link: 'http://glamouricon.org/',
+    github: 'https://github.com/1987mat/Syd_Fashion_Store',
   },
   {
     title: 'Sydney Raneé Store',
