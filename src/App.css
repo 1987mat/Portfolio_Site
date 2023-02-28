@@ -62,6 +62,7 @@ header {
   top: -5em;
 }
 
+/* 
 .resume-link {
   display: flex;
   flex-direction: row;
@@ -83,31 +84,17 @@ header {
 .resume-link span {
   color: whitesmoke;
   padding-right: 0.5em;
-}
+} */
 
-.sm-icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.sm-icons .github i,
-.linkedin i {
+.github-link .fa-github {
   color: whitesmoke;
+  color: lightgray;
+  font-size: 1.25rem;
+  transition: transform 0.8s ease, color 0.4s ease;
 }
 
-.sm-icons .github {
-  transition: transform 0.3s ease-in-out;
-}
-
-.sm-icons .linkedin {
-  margin-bottom: 1px;
-  transition: transform 0.3s ease-in-out;
-}
-
-.sm-icons .github:hover,
-.linkedin:hover {
-  cursor: pointer;
+.github-link .fa-github:hover {
+  color: whitesmoke;
   transform: scale(1.1);
 }
 
@@ -461,17 +448,16 @@ textarea {
 
 footer {
   max-width: 100%;
-  height: 4em;
+  height: 6em;
   background: rgb(11, 3, 42);
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 -8px 8px -8px rgb(11, 3, 42);
+  box-shadow: 0 0 8px rgb(11, 3, 42);
 }
 
 footer span {
   color: whitesmoke;
-  font-weight: bold;
   padding-right: 0.5em;
 }
 
@@ -543,20 +529,9 @@ footer span {
     display: none;
   }
 
-  .resume-link {
+  /* .resume-link {
     display: none;
-  }
-
-  .sm-icons {
-    gap: 1.8em;
-    margin-top: 0;
-    margin-right: -1em;
-  }
-
-  .sm-icons .github,
-  .sm-icons .linkedin {
-    font-size: 1.2rem;
-  }
+  } */
 
   nav {
     background: rgb(11, 3, 42);
@@ -857,9 +832,9 @@ footer span {
     cursor: pointer;
   }
 
-  .resume-link {
+  /* .resume-link {
     display: block;
-  }
+  } */
 
   nav {
     background-color: transparent;
@@ -902,11 +877,6 @@ footer span {
 
   .main-navigation i {
     color: whitesmoke;
-  }
-
-  .sm-icons {
-    margin-top: 0;
-    margin-right: 0;
   }
 
   #about {

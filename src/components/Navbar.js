@@ -96,6 +96,14 @@ const NavBar = ({ show }) => {
         <i className="fa fa-download"></i>
         <span>Resume</span>
       </a> */}
+      <a
+        href="https://github.com/1987mat"
+        target="_blank"
+        rel="noreferrer"
+        className="github-link"
+      >
+        <i className="fa fa-github"></i>
+      </a>
     </header>
   );
 };
