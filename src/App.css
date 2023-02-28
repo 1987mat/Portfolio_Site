@@ -87,9 +87,10 @@ header {
 } */
 
 .github-link .fa-github {
+  padding-top: 2.5px;
   color: whitesmoke;
   color: lightgray;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   transition: transform 0.8s ease, color 0.4s ease;
 }
 
@@ -112,12 +113,14 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  transform: translateY(50px);
-  transition: transform 0.9s ease;
+  transform: translateY(80px);
+  opacity: 0;
+  transition: transform 0.9s ease, opacity 1.5s ease;
 }
 
 .heading-wrapper.show {
   transform: translateY(0);
+  opacity: 1;
 }
 
 .heading-wrapper p {
@@ -155,8 +158,9 @@ header {
   font-weight: 700;
   background-color: transparent;
   border: 2px solid #f08000;
+  box-shadow: 0 0 6px white;
   color: whitesmoke;
-  transition: background-color 0.4s ease-in;
+  transition: background-color 0.6s ease-in-out;
 }
 
 .heading-wrapper a:hover {
@@ -234,7 +238,7 @@ header {
   font-size: 3rem;
   text-align: center;
   margin-top: 2em;
-  margin-bottom: 3em;
+  margin-bottom: 2em;
 }
 
 .projects-wrapper {
@@ -253,11 +257,13 @@ header {
   justify-content: center;
   align-items: center;
   transform: translateY(50px);
-  transition: transform 0.9s ease;
+  opacity: 0;
+  transition: transform 0.6s ease, opacity 0.6s ease;
 }
 
 .project-container.show {
   transform: translateY(0);
+  opacity: 1;
 }
 
 .project-title {
@@ -345,11 +351,12 @@ header {
 }
 
 .icons-wrapper {
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 3em;
-  padding: 10em 5em 10em 5em;
+  padding: 10em 3em 10em 3em;
   transform: translateY(50px);
   transition: transform 0.9s ease-in-out;
 }
@@ -862,7 +869,8 @@ footer span {
     color: lightgray;
     text-decoration: transparent underline;
     text-underline-offset: 15px;
-    transition: text-decoration-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    text-decoration-thickness: 2px;
+    transition: text-decoration-color 0.4s ease-in-out, color 0.4s ease-in-out;
   }
 
   .main-navigation li .nav-link:hover {
@@ -891,7 +899,7 @@ footer span {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 0.5em;
+    gap: 0.8em;
     width: 70vw;
     margin-top: -2em;
   }
@@ -962,7 +970,16 @@ footer span {
     gap: 4em;
   }
 
+  .heading-wrapper .main-title {
+    font-size: 5rem;
+  }
+
   .heading-text {
     width: 50%;
+    font-size: 3rem;
+  }
+
+  .heading-wrapper .btn-about {
+    font-size: 1.5rem;
   }
 }
