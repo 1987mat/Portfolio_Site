@@ -257,13 +257,11 @@ header {
   justify-content: center;
   align-items: center;
   transform: translateY(50px);
-  opacity: 0;
-  transition: transform 0.6s ease, opacity 0.6s ease;
+  transition: transform 0.6s ease;
 }
 
 .project-container.show {
   transform: translateY(0);
-  opacity: 1;
 }
 
 .project-title {
