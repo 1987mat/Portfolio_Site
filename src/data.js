@@ -1,5 +1,6 @@
 import sydneyRanee from './images/sydneyranee.png';
 import glamourIcon from './images/glamour.png';
+import origanoTrattoria from './images/origano.png';
 import sydneyStore from './images/sydneystore.png';
 import cafeDolce from './images/cafedolce.png';
 import fitwell from './images/fitwell.png';
@@ -19,10 +20,17 @@ export const projects = [
   },
   {
     title: 'Fashion Online Store',
-    description: 'Wordpress/WooCommerce shop ',
+    description: 'WooCommerce online store ',
     image: glamourIcon,
-    link: 'http://glamouricon.org/',
+    link: 'https://glamouricon.org/',
     github: 'https://github.com/1987mat/Syd_Fashion_Store',
+  },
+  {
+    title: 'Origano Trattoria',
+    description: 'Wordpress site built with Elementor ',
+    image: origanoTrattoria,
+    link: 'https://origanotrattoria.org/',
+    github: 'https://github.com/1987mat/restaurant_elementor_child_theme',
   },
   {
     title: 'Sydney Raneé Store',
