@@ -59,7 +59,7 @@ function App() {
         (entries) => {
           entries.forEach((entry) => {
             // Add fade in effect
-            entry.target.classList.toggle('show', entry.isIntersecting);
+            entry.target.classList.toggle('slide-up', entry.isIntersecting);
             // Remove fade in
             if (entry.isIntersecting) observer.unobserve(entry.target);
           });
