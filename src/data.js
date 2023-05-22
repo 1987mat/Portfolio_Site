@@ -12,26 +12,34 @@ import weatherApp from './images/weather_app.png';
 
 export const projects = [
   {
-    title: 'Sydney Raneé Website',
-    description: 'Official Artist Wordpress site',
+    title: 'Official Artist Website',
+    description: 'Sydney Raneé Wordpress site',
     image: sydneyRanee,
     link: 'https://www.sydneyranee.com',
     github: 'https://github.com/1987mat/Sydney_Ranee_Official',
   },
   {
-    title: 'Fashion Online Store',
+    title: 'eCommerce Fashion Site',
     description: 'WooCommerce online store ',
     image: glamourIcon,
     link: 'https://glamouricon.org/',
     github: 'https://github.com/1987mat/Syd_Fashion_Store',
   },
   {
-    title: 'Origano Trattoria',
-    description: 'Wordpress site built with Elementor ',
-    image: origanoTrattoria,
-    link: 'https://origanotrattoria.org/',
-    github: 'https://github.com/1987mat/restaurant_elementor_child_theme',
+    title: 'React Resume Builder',
+    description: 'App built with React JS',
+    image: resume,
+    link: 'https://1987mat.github.io/CV_Application/',
+    github: 'https://github.com/1987mat/CV_Application',
   },
+  {
+    title: 'React ToDoList App',
+    description: 'CRUD App built with React JS',
+    image: toDoList,
+    link: 'https://1987mat.github.io/ToDoList_ReactJS',
+    github: 'https://github.com/1987mat/ToDoList_ReactJS',
+  },
+
   {
     title: 'Sydney Raneé Store',
     description: 'Official Artist WooCommerce store',
@@ -40,25 +48,26 @@ export const projects = [
     github: 'https://github.com/1987mat/Sydney-Ranee-Store',
   },
   {
-    title: 'Fit&Well Gym ',
+    title: 'Gym Website ',
     description: 'Fully customized Wordpress site',
     image: fitwell,
     link: 'https://www.fitwellgym.com',
     github: 'https://github.com/1987mat/FitWellGym',
   },
   {
-    title: 'Cafe`Dolce',
-    description: 'Wordpress Coffee Shop Site',
+    title: 'Coffee Shop Site',
+    description: 'Custom Wordpress theme',
     image: cafeDolce,
     link: 'https://www.cafedolce.org/',
     github: 'https://github.com/1987mat/Cafe_Dolce',
   },
+
   {
-    title: 'Resume Builder App',
-    description: 'Create your resume. Built with React JS',
-    image: resume,
-    link: 'https://1987mat.github.io/CV_Application/',
-    github: 'https://github.com/1987mat/CV_Application',
+    title: 'Restaurant Brochure Site',
+    description: 'Wordpress site built with Elementor ',
+    image: origanoTrattoria,
+    link: 'https://origanotrattoria.org/',
+    github: 'https://github.com/1987mat/restaurant_elementor_child_theme',
   },
   {
     title: 'Github Finder App',
@@ -67,13 +76,7 @@ export const projects = [
     link: 'https://1987mat.github.io/Github_Finder_App',
     github: 'https://github.com/1987mat/Github_Finder_App',
   },
-  {
-    title: 'ToDoList App',
-    description: 'CRUD App built with React JS',
-    image: toDoList,
-    link: 'https://1987mat.github.io/ToDoList_ReactJS',
-    github: 'https://github.com/1987mat/ToDoList_ReactJS',
-  },
+
   {
     title: 'Library App',
     description: 'CRUD App built with Vanilla JS',
