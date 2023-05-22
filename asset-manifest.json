@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio_Site/static/css/main.5be041ee.css",
-    "main.js": "/Portfolio_Site/static/js/main.51873275.js",
+    "main.css": "/Portfolio_Site/static/css/main.8e3c6fa5.css",
+    "main.js": "/Portfolio_Site/static/js/main.9a0d5078.js",
     "static/js/787.37faa4c4.chunk.js": "/Portfolio_Site/static/js/787.37faa4c4.chunk.js",
     "static/media/cafedolce.png": "/Portfolio_Site/static/media/cafedolce.ed41c614c95eb98bf394.png",
     "static/media/library.png": "/Portfolio_Site/static/media/library.61d99592cf930f9d636d.png",
@@ -17,12 +17,12 @@
     "static/media/github.png": "/Portfolio_Site/static/media/github.f3e5ac5089cf616530e8.png",
     "static/media/resume.png": "/Portfolio_Site/static/media/resume.9c71b6f553fd2e7a1c30.png",
     "index.html": "/Portfolio_Site/index.html",
-    "main.5be041ee.css.map": "/Portfolio_Site/static/css/main.5be041ee.css.map",
-    "main.51873275.js.map": "/Portfolio_Site/static/js/main.51873275.js.map",
+    "main.8e3c6fa5.css.map": "/Portfolio_Site/static/css/main.8e3c6fa5.css.map",
+    "main.9a0d5078.js.map": "/Portfolio_Site/static/js/main.9a0d5078.js.map",
     "787.37faa4c4.chunk.js.map": "/Portfolio_Site/static/js/787.37faa4c4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5be041ee.css",
-    "static/js/main.51873275.js"
+    "static/css/main.8e3c6fa5.css",
+    "static/js/main.9a0d5078.js"
   ]
 }
