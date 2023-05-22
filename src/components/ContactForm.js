@@ -37,32 +37,30 @@ const ContactForm = React.forwardRef((props, ref) => {
         <span className="success-message">{message}</span>
         <div className="form-container">
           <form onSubmit={sendEmail}>
-            <input
-              type="text"
-              name="name"
-              placeholder="First Name"
-              required
-            ></input>
-            <input
-              type="text"
-              name="last_name"
-              placeholder="Last Name"
-              required
-            ></input>
-            <input
-              id="email"
-              type="email"
-              name="email"
-              placeholder="email"
-              required
-            ></input>
-            <textarea
-              id="message"
-              name="message"
-              placeholder="Your message"
-              required
-            ></textarea>
-            <input type="submit" className="submit-btn"></input>
+            <div class="form-control">
+              <label for="first_name">First Name</label>
+              <input type="text" name="name" id="first_name" required></input>
+            </div>
+            <div class="form-control">
+              <label for="last_name">Last Name</label>
+              <input
+                type="text"
+                name="last_name"
+                id="last_name"
+                required
+              ></input>
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input id="email" type="email" name="email" required></input>
+            </div>
+            <div class="form-control">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <div class="form-control">
+              <input type="submit" className="submit-btn"></input>
+            </div>
           </form>
         </div>
       </div>

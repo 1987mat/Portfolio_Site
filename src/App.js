@@ -15,13 +15,11 @@ function App() {
     const handleScroll = () => {
       const currentScrollY = window.pageYOffset;
 
-      // Hide Navbar only on smaller screens
+      // Hide navbar on scroll
       if (window.innerWidth >= 992) {
-        // Hide navbar
         if (prevScrollY.current < currentScrollY && showHeader) {
           setShowHeader(false);
         }
-        // Show navbar
         if (
           (prevScrollY.current > currentScrollY || window.pageYOffset < 50) &&
           !showHeader
@@ -39,7 +37,6 @@ function App() {
     };
   }, [showHeader]);
 
-  // Fade in animation on scroll
   const projectCards = useRef([]);
   const pushRef = (el) => projectCards.current.push(el);
   const heading = useRef(null);
@@ -52,15 +49,13 @@ function App() {
     ref2: headShot,
   };
 
-  // Fade in effect when user scroll to sections
+  // Fade / slide up animation on scroll
   useEffect(
     () => {
       const observer = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
-            // Add fade in effect
             entry.target.classList.toggle('slide-up', entry.isIntersecting);
-            // Remove fade in
             if (entry.isIntersecting) observer.unobserve(entry.target);
           });
         },

@@ -185,7 +185,7 @@ header {
 
 .photo-wrapper img {
   width: 100%;
-  border-radius: 2px;
+  border-radius: 5px;
   margin: 0;
   padding: 0;
 }
@@ -197,7 +197,7 @@ header {
   height: 25px;
   background-color: transparent;
   border: 5px solid #f08000;
-  border-radius: 2px;
+  border-radius: 5px;
 }
 
 .top.left {
@@ -231,14 +231,14 @@ header {
 /* PROJECTS SECTION */
 #projects {
   background-color: #fefefa;
-  padding-top: 4em;
+  padding: 4em 1em;
 }
 
 .projects-section-title {
   font-size: 3rem;
   text-align: center;
   margin-top: 2em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 .projects-wrapper {
@@ -356,7 +356,7 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   gap: 3em;
-  padding: 10em 3em 10em 3em;
+  padding: 10em 3em 5em 3em;
   transform: translateY(50px);
   opacity: 0;
   transition: transform 0.6s ease, opacity 1.5s ease;
@@ -370,6 +370,7 @@ header {
 .icons-wrapper svg {
   width: 6em;
   height: 6em;
+  margin-bottom: 5em;
   transition: transform 0.2s ease-in-out;
 }
 
@@ -415,24 +416,36 @@ header {
 }
 
 form {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 70vw;
+  align-items: center; */
+  width: 60vw;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+label {
+  width: 100%;
+  font-weight: 600;
 }
 
 input,
 textarea {
+  width: 100%;
   padding: 1em;
-  margin: 1em;
-  border-radius: 2px;
+  margin-bottom: 2em;
+  border-radius: 5px;
   border: 0.5px solid gray;
   border-top: none;
   background-color: #fefefa;
-  outline: none;
   box-shadow: 0 0 6px gray;
-  -webkit-appearance: none;
   -moz-appearance: none;
+  -webkit-appearance: none;
   appearance: none;
 }
 
@@ -442,12 +455,12 @@ textarea {
 }
 
 .submit-btn {
-  -webkit-appearance: none;
   -moz-appearance: none;
+  -webkit-appearance: none;
   appearance: none;
   border: none;
-  font-weight: bold;
-  padding: 1em;
+  font-weight: 600;
+  font-size: 1rem;
   transition: transform 0.2s ease-in-out;
   background-color: whitesmoke;
 }
@@ -667,6 +680,10 @@ footer span {
   .contact-title {
     text-align: center;
     font-size: 2rem;
+  }
+
+  form {
+    width: 90vw;
   }
 
   footer {
@@ -941,6 +958,10 @@ footer span {
   .contact-title {
     font-size: 3rem;
   }
+
+  form {
+    width: 60vw;
+  }
 }
 
 /* Larger Screens */
@@ -965,17 +986,13 @@ footer span {
 }
 
 /* Larger Screens */
-@media screen and (min-width: 2073px) {
+@media screen and (min-width: 1920px) {
   #about {
     padding: 0 12em;
   }
 
-  .heading-wrapper {
-    gap: 4em;
-  }
-
   .heading-wrapper .main-title {
-    font-size: 5rem;
+    font-size: 6rem;
   }
 
   .heading-text {
@@ -983,7 +1000,7 @@ footer span {
     font-size: 3rem;
   }
 
-  .heading-wrapper .btn-about {
+  .heading-wrapper a {
     font-size: 1.5rem;
   }
 }
