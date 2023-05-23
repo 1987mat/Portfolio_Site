@@ -41,8 +41,8 @@ export const projects = [
   },
 
   {
-    title: 'Sydney Raneé Store',
-    description: 'Official Artist WooCommerce store',
+    title: 'WooCommerce Site',
+    description: 'Custom WooCommerce theme',
     image: sydneyStore,
     link: 'https://sydneyraneeshop.com',
     github: 'https://github.com/1987mat/Sydney-Ranee-Store',

@@ -230,7 +230,6 @@ header {
 
 /* PROJECTS SECTION */
 #projects {
-  background-color: #fefefa;
   padding: 4em 1em;
 }
 
@@ -238,7 +237,6 @@ header {
   font-size: 3rem;
   text-align: center;
   margin-top: 2em;
-  margin-bottom: 1em;
 }
 
 .projects-wrapper {
@@ -247,7 +245,7 @@ header {
   justify-content: center;
   align-items: center;
   gap: 5em;
-  padding: 10em 4em 10em 4em;
+  padding: 6em 4em 10em 4em;
 }
 
 .project-container {
@@ -382,7 +380,6 @@ header {
 #contact {
   padding-top: 4em;
   padding-bottom: 5em;
-  background-color: #fefefa;
 }
 
 .contact-wrapper {
@@ -416,10 +413,6 @@ header {
 }
 
 form {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
   width: 60vw;
 }
 
@@ -683,7 +676,7 @@ footer span {
   }
 
   form {
-    width: 90vw;
+    width: 85vw;
   }
 
   footer {
