@@ -188,17 +188,19 @@ header {
   border-radius: 5px;
   margin: 0;
   padding: 0;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 /* Headshot Borders */
-.photo-wrapper .border {
+/* .photo-wrapper .border {
   position: absolute;
   width: 25px;
   height: 25px;
   background-color: transparent;
   border: 5px solid #f08000;
   border-radius: 5px;
-}
+} */
 
 .top.left {
   top: 0;
@@ -245,7 +247,7 @@ header {
   justify-content: center;
   align-items: center;
   gap: 5em;
-  padding: 6em 4em 10em 4em;
+  padding: 6em 2em 10em 2em;
 }
 
 .project-container {
