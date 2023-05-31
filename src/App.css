@@ -481,7 +481,7 @@ footer span {
   padding-right: 0.5em;
 }
 
-/* MEDIA QUERIES */
+/* RESPONSIVE */
 
 /* Mobile */
 @media screen and (min-width: 320px) {
@@ -634,7 +634,8 @@ footer span {
     height: fit-content;
     justify-content: center;
     align-items: center;
-    gap: 0.5em;
+    gap: 1em;
+    margin-top: 2em;
   }
 
   .heading-wrapper .main-title {
@@ -659,7 +660,7 @@ footer span {
   }
 
   .heading-text {
-    width: 80%;
+    width: 100%;
   }
 
   .heading-wrapper a {
