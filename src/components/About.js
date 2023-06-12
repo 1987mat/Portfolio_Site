@@ -23,7 +23,8 @@ const About = React.forwardRef((props, ref) => {
           />
         </div>
         <p className="heading-text">
-          I design, code and build user-friendly and responsive sites and apps.
+          I design, code and build user-friendly and responsive sites and
+          applications.
         </p>
         <Link
           to="projects"

@@ -888,7 +888,7 @@ footer span {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 0.5em;
+    gap: 0;
     width: 70vw;
     padding: 4em;
   }
