@@ -16,18 +16,16 @@ function App() {
       const currentScrollY = window.pageYOffset;
 
       // Hide navbar on scroll
-      if (window.innerWidth >= 992) {
-        if (prevScrollY.current < currentScrollY && showHeader) {
-          setShowHeader(false);
-        }
-        if (
-          (prevScrollY.current > currentScrollY || window.pageYOffset < 50) &&
-          !showHeader
-        ) {
-          setShowHeader(true);
-        }
-        prevScrollY.current = currentScrollY;
+      if (prevScrollY.current < currentScrollY && showHeader) {
+        setShowHeader(false);
       }
+      if (
+        (prevScrollY.current > currentScrollY || window.pageYOffset < 50) &&
+        !showHeader
+      ) {
+        setShowHeader(true);
+      }
+      prevScrollY.current = currentScrollY;
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -72,9 +70,7 @@ function App() {
         observer.observe(card);
       });
 
-      if (window.innerWidth >= 992) {
-        observer.observe(headShot.current);
-      }
+      observer.observe(headShot.current);
     },
     [projectCards],
     heading,

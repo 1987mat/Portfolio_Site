@@ -12,6 +12,20 @@ import weatherApp from './images/weather_app.png';
 
 export const projects = [
   {
+    title: 'Official Artist Website',
+    description: 'Sydney Raneé Wordpress site',
+    image: sydneyRanee,
+    link: 'https://www.sydneyranee.com',
+    github: 'https://github.com/1987mat/Sydney_Ranee_Official',
+  },
+  {
+    title: 'React ToDoList App',
+    description: 'CRUD App built with React JS',
+    image: toDoList,
+    link: 'https://1987mat.github.io/ToDoList_ReactJS',
+    github: 'https://github.com/1987mat/ToDoList_ReactJS',
+  },
+  {
     title: 'eCommerce Fashion Site',
     description: 'WooCommerce online store ',
     image: glamourIcon,
@@ -24,20 +38,6 @@ export const projects = [
     image: resume,
     link: 'https://1987mat.github.io/CV_Application/',
     github: 'https://github.com/1987mat/CV_Application',
-  },
-  {
-    title: 'React ToDoList App',
-    description: 'CRUD App built with React JS',
-    image: toDoList,
-    link: 'https://1987mat.github.io/ToDoList_ReactJS',
-    github: 'https://github.com/1987mat/ToDoList_ReactJS',
-  },
-  {
-    title: 'Official Artist Website',
-    description: 'Sydney Raneé Wordpress site',
-    image: sydneyRanee,
-    link: 'https://www.sydneyranee.com',
-    github: 'https://github.com/1987mat/Sydney_Ranee_Official',
   },
   {
     title: 'WooCommerce Site',

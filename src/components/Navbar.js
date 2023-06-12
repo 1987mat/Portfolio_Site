@@ -96,14 +96,24 @@ const NavBar = ({ show }) => {
         <i className="fa fa-download"></i>
         <span>Resume</span>
       </a> */}
-      <a
-        href="https://github.com/1987mat"
-        target="_blank"
-        rel="noreferrer"
-        className="github-link"
-      >
-        <i className="fa fa-github"></i>
-      </a>
+      <div className="social-icons">
+        <a
+          href="https://github.com/1987mat"
+          target="_blank"
+          rel="noreferrer"
+          className="github-link"
+        >
+          <i className="fa fa-github"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/matteo-calvani-0802b0234/"
+          target="_blank"
+          rel="noreferrer"
+          className="linkedin-link"
+        >
+          <i className="fa fa-linkedin"></i>
+        </a>
+      </div>
     </header>
   );
 };

@@ -8,7 +8,10 @@ const About = React.forwardRef((props, ref) => {
   return (
     <section id="about">
       <div className="heading-wrapper" ref={ref1}>
-        <h1 className="main-title">Matteo Calvani</h1>
+        <div className="heading">
+          <span>Hi, I'm</span>
+          <h1 className="main-title">Matteo</h1>
+        </div>
         <div className="type-writer-wrapper">
           <span style={{ color: '#f08000', fontWeight: 'lighter' }}>Web</span>
           <Typewriter
@@ -20,8 +23,7 @@ const About = React.forwardRef((props, ref) => {
           />
         </div>
         <p className="heading-text">
-          I design and build user-friendly and responsive websites. I love
-          learning and working on interesting and exciting projects.
+          I design, code and build user-friendly and responsive sites and apps.
         </p>
         <Link
           to="projects"
@@ -36,10 +38,6 @@ const About = React.forwardRef((props, ref) => {
       </div>
       <div className="photo-container">
         <div className="photo-wrapper" ref={ref2}>
-          <div className="border top left"></div>
-          <div className="border top right"></div>
-          <div className="border bottom left"></div>
-          <div className="border bottom right"></div>
           <img src={headshot} alt="headshot"></img>
         </div>
       </div>
