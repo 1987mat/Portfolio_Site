@@ -528,10 +528,6 @@ footer span {
     display: none;
   }
 
-  /* .resume-link {
-    display: none;
-  } */
-
   nav {
     background: rgb(11, 3, 42);
     position: fixed;
@@ -657,6 +653,7 @@ footer span {
   }
 
   .photo-wrapper {
+    margin-top: 0.5em;
     padding: 0;
     display: flex;
     justify-content: center;
@@ -664,7 +661,7 @@ footer span {
   }
 
   .photo-wrapper img {
-    width: 30%;
+    width: 25%;
     border-radius: 10px;
   }
 
@@ -687,7 +684,53 @@ footer span {
 /* Mobile Land */
 @media screen and (min-width: 320px) and (orientation: landscape) {
   html {
-    font-size: 85%;
+    font-size: 80%;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .logo {
+    display: block;
+    visibility: visible;
+    width: 2rem;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.5rem;
+  }
+
+  nav {
+    background-color: transparent;
+    position: relative;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transform: initial;
+    width: auto;
+    min-height: auto;
+  }
+
+  .main-navigation {
+    flex-direction: row;
+    gap: 3em;
+  }
+
+  .main-navigation li {
+    opacity: 1;
+    display: flex;
+  }
+
+  .main-navigation li a {
+    opacity: 1;
+    display: flex;
+    font-size: 0.5rem;
+  }
+
+  .main-navigation li .nav-link {
+    color: lightgray;
+    position: relative;
+    text-decoration: none;
   }
 
   #about {
@@ -782,35 +825,15 @@ footer span {
     cursor: pointer;
   }
 
-  /* .resume-link {
-    display: block;
-  } */
-
   nav {
-    background-color: transparent;
-    position: relative;
-    top: 0;
-    left: 2rem;
-    opacity: 1;
-    transform: initial;
-    width: auto;
-    min-height: auto;
+    left: 0;
   }
 
   .main-navigation {
-    flex-direction: row;
     gap: 5em;
   }
 
-  .main-navigation li {
-    opacity: 1;
-    display: flex;
-  }
-
   .main-navigation li a {
-    opacity: 1;
-    display: flex;
-    font-size: initial;
     font-size: initial;
   }
 
@@ -826,7 +849,8 @@ footer span {
     position: absolute;
     width: 0;
     right: 0;
-    margin-top: 1.5rem;
+    margin-top: 1.8rem;
+    border-radius: 5px;
     height: 3px;
     display: block;
     transition: width 0.4s ease;
@@ -919,6 +943,10 @@ footer span {
 
 /* Larger Screens */
 @media screen and (min-width: 1200px) {
+  .main-navigation {
+    gap: 7em;
+  }
+
   .heading-wrapper .main-title {
     font-size: 5.5rem;
   }
@@ -939,12 +967,4 @@ footer span {
   #about {
     padding: 0 2em;
   }
-
-  /* .heading-wrapper .main-title {
-    font-size: 10rem;
-  }
-
-  .heading-wrapper a {
-    font-size: 1.5rem;
-  } */
 }
