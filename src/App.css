@@ -64,30 +64,6 @@ header {
   top: -5em;
 }
 
-/* 
-.resume-link {
-  display: flex;
-  flex-direction: row;
-  min-width: fit-content;
-  color: whitesmoke;
-  background-color: transparent;
-  padding: 0.5em;
-  border: 1px solid #f08000;
-  border-radius: 5px;
-  font-weight: 700;
-  transition: transform 0.2s ease-in-out;
-}
-
-.resume-link:hover {
-  transform: translateY(-1px);
-}
-
-.resume-link i,
-.resume-link span {
-  color: whitesmoke;
-  padding-right: 0.5em;
-} */
-
 .social-icons {
   position: fixed;
   right: 1rem;
@@ -200,17 +176,13 @@ header {
 
 .photo-wrapper {
   transform: translateY(50px);
-  transition: transform 0.9s ease;
+  opacity: 0;
+  transition: transform 0.9s ease, opacity 1.5s ease;
 }
 
 .photo-wrapper.slide-up {
   transform: translateY(0);
-}
-
-.photo-wrapper img {
-  width: 100%;
-  margin: 0;
-  padding: 0;
+  opacity: 1;
 }
 
 /* PROJECTS SECTION */
@@ -260,6 +232,7 @@ header {
   height: 12em;
   width: 100%;
   border-radius: 10px;
+
   box-shadow: rgba(0, 0, 0, 0.35) 0px 8px 15px;
   opacity: 1;
   transition: transform 0.9s ease, opacity 0.6s ease;
@@ -625,6 +598,7 @@ footer span {
 
   .heading .main-title {
     font-size: 2.8rem;
+    margin-top: 0.1em;
   }
 
   .heading-wrapper p {
@@ -661,8 +635,7 @@ footer span {
   }
 
   .photo-wrapper img {
-    width: 25%;
-    border-radius: 10px;
+    width: 35%;
   }
 
   .projects-title,
@@ -888,7 +861,7 @@ footer span {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 0;
+    gap: 1em;
     width: 70vw;
     padding: 4em;
   }
@@ -925,10 +898,9 @@ footer span {
     width: 30vw;
   }
 
-  .photo-wrapper img {
+  /* .photo-wrapper img {
     width: 65%;
-    border-radius: 10px;
-  }
+  } */
 
   .projects-title,
   .skills-title,

@@ -1,7 +1,7 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
 import { Link } from 'react-scroll';
-import headshot from '../images/photo.jpg';
+import headshot from '../images/photo1.png';
 
 const About = React.forwardRef((props, ref) => {
   const { ref1, ref2 } = ref;
@@ -23,8 +23,7 @@ const About = React.forwardRef((props, ref) => {
           />
         </div>
         <p className="heading-text">
-          I design, code and build user-friendly and responsive sites and
-          applications.
+          I design and code user-friendly and responsive sites and applications.
         </p>
         <Link
           to="projects"
