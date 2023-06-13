@@ -10,7 +10,7 @@ const About = React.forwardRef((props, ref) => {
       <div className="heading-wrapper" ref={ref1}>
         <div className="heading">
           <span>Hi, I'm</span>
-          <h1 className="main-title">Matteo</h1>
+          <h1 className="main-title">Matteo.</h1>
         </div>
         <div className="type-writer-wrapper">
           <span style={{ color: '#f08000', fontWeight: 'lighter' }}>Web</span>
