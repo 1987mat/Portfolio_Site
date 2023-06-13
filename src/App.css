@@ -939,4 +939,8 @@ footer span {
   #about {
     padding: 0 2em;
   }
+
+  .photo-wrapper img {
+    width: 90%;
+  }
 }
