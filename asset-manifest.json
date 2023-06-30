@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/Portfolio_Site/static/css/main.3bf3e297.css",
-    "main.js": "/Portfolio_Site/static/js/main.2ee87ab5.js",
+    "main.js": "/Portfolio_Site/static/js/main.c738e8e6.js",
     "static/js/787.37faa4c4.chunk.js": "/Portfolio_Site/static/js/787.37faa4c4.chunk.js",
+    "static/media/github.png": "/Portfolio_Site/static/media/github.46cf1cf051addb76adbc.png",
     "static/media/cafedolce.png": "/Portfolio_Site/static/media/cafedolce.ed41c614c95eb98bf394.png",
     "static/media/library.png": "/Portfolio_Site/static/media/library.61d99592cf930f9d636d.png",
     "static/media/photo1.png": "/Portfolio_Site/static/media/photo1.b7572ffde3429212f387.png",
@@ -14,15 +15,14 @@
     "static/media/glamour.png": "/Portfolio_Site/static/media/glamour.a85e2531681187ca4e62.png",
     "static/media/sydneystore.png": "/Portfolio_Site/static/media/sydneystore.dd808fca793478f5973d.png",
     "static/media/toDoList.png": "/Portfolio_Site/static/media/toDoList.9681a849e11c2fdd1eed.png",
-    "static/media/github.png": "/Portfolio_Site/static/media/github.f3e5ac5089cf616530e8.png",
     "static/media/resume.png": "/Portfolio_Site/static/media/resume.9c71b6f553fd2e7a1c30.png",
     "index.html": "/Portfolio_Site/index.html",
     "main.3bf3e297.css.map": "/Portfolio_Site/static/css/main.3bf3e297.css.map",
-    "main.2ee87ab5.js.map": "/Portfolio_Site/static/js/main.2ee87ab5.js.map",
+    "main.c738e8e6.js.map": "/Portfolio_Site/static/js/main.c738e8e6.js.map",
     "787.37faa4c4.chunk.js.map": "/Portfolio_Site/static/js/787.37faa4c4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3bf3e297.css",
-    "static/js/main.2ee87ab5.js"
+    "static/js/main.c738e8e6.js"
   ]
 }
