@@ -33,18 +33,18 @@ export const projects = [
     github: 'https://github.com/1987mat/ToDoList_ReactJS',
   },
   {
-    title: 'eCommerce Fashion Site',
-    description: 'Custom WooCommerce theme',
-    image: glamourIcon,
-    link: 'https://glamouricon.org/',
-    github: 'https://github.com/1987mat/Syd_Fashion_Store',
-  },
-  {
     title: 'Github Finder API App',
     description: 'Search and display github users profile',
     image: github,
     link: 'https://1987mat.github.io/Github_Finder_App',
     github: 'https://github.com/1987mat/Github_Finder_App',
+  },
+  {
+    title: 'eCommerce Fashion Site',
+    description: 'Custom WooCommerce theme',
+    image: glamourIcon,
+    link: 'https://glamouricon.org/',
+    github: 'https://github.com/1987mat/Syd_Fashion_Store',
   },
   {
     title: 'WooCommerce Site',
