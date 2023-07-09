@@ -13,7 +13,7 @@ import weatherApp from './images/weather_app.png';
 export const projects = [
   {
     title: 'Official Artist Website',
-    description: 'Wordpress custom theme',
+    description: 'WordPress custom theme',
     image: sydneyRanee,
     link: 'https://www.sydneyranee.com',
     github: 'https://github.com/1987mat/Sydney_Ranee_Official',
@@ -62,7 +62,7 @@ export const projects = [
   },
   {
     title: 'Gym Website ',
-    description: 'Fully customized Wordpress site',
+    description: 'Fully customized WordPress site',
     image: fitwell,
     link: 'https://www.fitwellgym.com',
     github: 'https://github.com/1987mat/FitWellGym',
@@ -76,14 +76,14 @@ export const projects = [
   },
   {
     title: 'Coffee Shop Site',
-    description: 'Custom Wordpress theme',
+    description: 'Custom WordPress theme',
     image: cafeDolce,
     link: 'https://www.cafedolce.org/',
     github: 'https://github.com/1987mat/Cafe_Dolce',
   },
   {
     title: 'Restaurant Brochure Site',
-    description: 'Wordpress site built with Elementor ',
+    description: 'WordPress site built with Elementor ',
     image: origanoTrattoria,
     link: 'https://origanotrattoria.org/',
     github: 'https://github.com/1987mat/restaurant_elementor_child_theme',
