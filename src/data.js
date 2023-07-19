@@ -69,7 +69,7 @@ export const projects = [
   },
   {
     title: 'Weather App',
-    description: 'Weather forescast API app',
+    description: 'Weather forecast API app',
     image: weatherApp,
     link: 'https://1987mat.github.io/Weather_App',
     github: 'https://github.com/1987mat/Weather_App',
