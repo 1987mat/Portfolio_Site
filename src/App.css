@@ -594,7 +594,7 @@ footer span {
   #about {
     padding: 0 1em;
     flex-direction: column-reverse;
-    gap: 2em;
+    gap: 3em;
   }
 
   .heading-wrapper {
@@ -672,7 +672,7 @@ footer span {
 /* Mobile Land */
 @media screen and (min-width: 320px) and (orientation: landscape) {
   html {
-    font-size: 80%;
+    font-size: 75%;
   }
 
   .hamburger {
