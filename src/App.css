@@ -122,12 +122,13 @@ header {
 
 .heading span {
   font-family: 'Varela', sans-serif;
-  color: lightgray;
+  color: hsl(252, 87%, 94%);
+  font-weight: 700;
 }
 
 .heading-wrapper p {
-  color: whitesmoke;
-  font-weight: 700;
+  color: hsl(252, 87%, 94%);
+  font-weight: 600;
 }
 
 .heading-text {
@@ -138,7 +139,7 @@ header {
 
 .main-title {
   font-family: 'Varela', sans-serif;
-  color: lightgray;
+  color: whitesmoke;
   font-weight: 500;
   letter-spacing: 8px;
 }
@@ -149,6 +150,8 @@ header {
 
 .type-writer-wrapper span {
   color: whitesmoke;
+  color: hsl(252, 87%, 92%);
+  font-weight: 500;
 }
 
 .heading-wrapper a {
@@ -157,17 +160,18 @@ header {
   border-radius: 5px;
   padding: 1em;
   width: 12em;
-  font-weight: 700;
-  background-color: transparent;
+  font-weight: 600;
+  letter-spacing: 0.5px;
   border: 2px solid #f08000;
   box-shadow: 0 0 6px white;
-  color: whitesmoke;
-  transition: background-color 0.6s ease-in-out;
+  color: #282828;
+  background-color: #f08000;
+  transition: transform 0.4s ease-in-out;
 }
 
 .heading-wrapper a:hover {
   cursor: pointer;
-  background-color: #f08000;
+  transform: scale(1.01);
 }
 
 .photo-container {
@@ -223,6 +227,8 @@ header {
 
 .project-title {
   text-align: center;
+  color: #404040;
+  font-weight: 600;
 }
 
 .screenshot {
@@ -250,6 +256,8 @@ header {
 
 .project-description {
   text-align: center;
+  color: hsl(0, 0%, 45%);
+  font-weight: 500;
 }
 
 .project-links-wrapper {
@@ -267,6 +275,7 @@ header {
 .project-links-wrapper p {
   font-weight: bold;
   text-decoration: underline transparent;
+  text-underline-offset: 10px;
   transition: text-decoration 0.2s linear;
 }
 
@@ -382,7 +391,8 @@ form {
 
 label {
   width: 100%;
-  font-weight: 600;
+  font-weight: 500;
+  color: hsl(0, 0%, 25%);
 }
 
 input,
@@ -414,6 +424,8 @@ textarea {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   transition: transform 0.2s ease-in-out;
   background-color: #f0f8ff;
+  color: #404040;
+  text-transform: uppercase;
 }
 
 .submit-btn:hover {
@@ -582,7 +594,7 @@ footer span {
   #about {
     padding: 0 1em;
     flex-direction: column-reverse;
-    gap: 3em;
+    gap: 2em;
   }
 
   .heading-wrapper {
@@ -644,6 +656,8 @@ footer span {
   .contact-title {
     text-align: center;
     font-size: 2rem;
+    letter-spacing: 2px;
+    color: #404040;
   }
 
   form {
@@ -767,8 +781,16 @@ footer span {
     gap: 3em;
   }
 
+  .heading-wrapper p {
+    font-size: 1.2rem;
+  }
+
   .heading .main-title {
-    font-size: 3rem;
+    font-size: 4rem;
+  }
+
+  .type-writer-wrapper span {
+    font-size: 2rem;
   }
 }
 
@@ -862,7 +884,7 @@ footer span {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 1em;
+    gap: 0.5em;
     width: 70vw;
     padding: 4em;
   }
@@ -877,22 +899,22 @@ footer span {
     font-size: 5rem;
     text-align: start;
     margin-left: -0.1em;
-    margin-top: 0.25em;
+    margin-top: 0;
+    margin-bottom: 0.5em;
   }
 
   .heading-wrapper p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: start;
     width: 100%;
   }
 
   .type-writer-wrapper span {
-    font-size: 2rem;
+    font-size: 2.25rem;
   }
 
   .heading-wrapper a {
     font-size: 1rem;
-    margin-top: 1em;
   }
 
   .photo-wrapper {
