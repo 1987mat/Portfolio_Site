@@ -10,7 +10,7 @@ const About = React.forwardRef((props, ref) => {
       <div className="heading-wrapper" ref={ref1}>
         <div className="heading">
           <span>Hi, I'm</span>
-          <h1 className="main-title">Matteo.</h1>
+          <h1 className="main-title">Matteo</h1>
         </div>
         <div className="type-writer-wrapper">
           <span style={{ color: '#f08000', fontWeight: 'lighter' }}>Web</span>
@@ -24,7 +24,7 @@ const About = React.forwardRef((props, ref) => {
         </div>
         <p className="heading-text">
           I build responsive websites and I'm specialized in Front-End &
-          WordPress custom theme development.
+          WordPress development.
         </p>
         <Link
           to="projects"
