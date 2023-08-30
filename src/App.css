@@ -424,7 +424,7 @@ textarea {
   font-size: 1rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   transition: transform 0.2s ease-in-out;
-  background-color: hsl(219, 83%, 75%);
+  background-color: hsl(208, 97%, 85%);
   color: white;
 }
 
@@ -446,6 +446,7 @@ footer {
 footer span {
   color: whitesmoke;
   padding-right: 0.5em;
+  font-weight: 600;
 }
 
 /* RESPONSIVE */

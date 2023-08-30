@@ -8,7 +8,7 @@ import github from './images/github.png';
 import resume from './images/resume.png';
 import toDoList from './images/toDoList.png';
 import library from './images/library.png';
-import weatherApp from './images/weather_app.png';
+import weatherApp from './images/weather.png';
 
 export const projects = [
   {
