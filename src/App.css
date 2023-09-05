@@ -3,7 +3,7 @@
 
 * {
   font-family: 'Montserrat', sans-serif;
-  color: #505050;
+  color: #484848;
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
 }
@@ -667,7 +667,7 @@ footer span {
     text-align: center;
     font-size: 2rem;
     letter-spacing: 2px;
-    color: #404040;
+    color: #484848;
   }
 
   form {
