@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio_Site/static/css/main.67ad1621.css",
-    "main.js": "/Portfolio_Site/static/js/main.37631167.js",
+    "main.css": "/Portfolio_Site/static/css/main.f3145f02.css",
+    "main.js": "/Portfolio_Site/static/js/main.6ac720ba.js",
     "static/js/787.37faa4c4.chunk.js": "/Portfolio_Site/static/js/787.37faa4c4.chunk.js",
     "static/media/fitwell.png": "/Portfolio_Site/static/media/fitwell.1c635e9066c85cd6aa91.png",
     "static/media/weather.png": "/Portfolio_Site/static/media/weather.d0c15b3a641bc05aef1c.png",
@@ -17,12 +17,12 @@
     "static/media/toDoList.png": "/Portfolio_Site/static/media/toDoList.9681a849e11c2fdd1eed.png",
     "static/media/resume.png": "/Portfolio_Site/static/media/resume.9c71b6f553fd2e7a1c30.png",
     "index.html": "/Portfolio_Site/index.html",
-    "main.67ad1621.css.map": "/Portfolio_Site/static/css/main.67ad1621.css.map",
-    "main.37631167.js.map": "/Portfolio_Site/static/js/main.37631167.js.map",
+    "main.f3145f02.css.map": "/Portfolio_Site/static/css/main.f3145f02.css.map",
+    "main.6ac720ba.js.map": "/Portfolio_Site/static/js/main.6ac720ba.js.map",
     "787.37faa4c4.chunk.js.map": "/Portfolio_Site/static/js/787.37faa4c4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.67ad1621.css",
-    "static/js/main.37631167.js"
+    "static/css/main.f3145f02.css",
+    "static/js/main.6ac720ba.js"
   ]
 }
