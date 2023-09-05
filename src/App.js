@@ -35,19 +35,31 @@ function App() {
     };
   }, [showHeader]);
 
-  const projectCards = useRef([]);
-  const pushRef = (el) => projectCards.current.push(el);
+  // Fade / slide up animation on scroll
   const heading = useRef(null);
   const headShot = useRef(null);
-  const skills = useRef(null);
+  const projectsTitle = useRef([]);
+  const projectCards = useRef([]);
+  const pushRef = (el) => projectCards.current.push(el);
+  const skillsTitle = useRef(null);
+  const skillsWrapper = useRef(null);
   const contact = useRef(null);
 
-  const refs = {
+  const aboutRefs = {
     ref1: heading,
     ref2: headShot,
   };
 
-  // Fade / slide up animation on scroll
+  const projectsRefs = {
+    ref1: projectsTitle,
+    ref2: pushRef,
+  };
+
+  const skillsRefs = {
+    ref1: skillsTitle,
+    ref2: skillsWrapper,
+  };
+
   useEffect(
     () => {
       const observer = new IntersectionObserver(
@@ -63,19 +75,21 @@ function App() {
       );
 
       observer.observe(heading.current);
-      observer.observe(skills.current);
-      observer.observe(contact.current);
-
+      observer.observe(headShot.current);
+      observer.observe(projectsTitle.current);
       projectCards.current.forEach((card) => {
         observer.observe(card);
       });
-
-      observer.observe(headShot.current);
+      observer.observe(skillsTitle.current);
+      observer.observe(skillsWrapper.current);
+      observer.observe(contact.current);
     },
     [projectCards],
     heading,
     headShot,
-    skills,
+    projectsTitle,
+    skillsTitle,
+    skillsWrapper,
     contact
   );
 
@@ -83,9 +97,9 @@ function App() {
     <React.Fragment>
       <NavBar show={showHeader} />
       <main>
-        <About ref={refs} />
-        <Projects ref={pushRef} />
-        <Skills ref={skills} />
+        <About ref={aboutRefs} />
+        <Projects ref={projectsRefs} />
+        <Skills ref={skillsRefs} />
         <ContactForm ref={contact} />
       </main>
       <Footer />

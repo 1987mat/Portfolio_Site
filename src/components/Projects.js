@@ -2,12 +2,16 @@ import React from 'react';
 import { projects } from '../data';
 
 const Projects = React.forwardRef((props, ref) => {
+  const { ref1, ref2 } = ref;
+
   return (
     <section id="projects">
-      <h1 className="projects-title">Projects</h1>
+      <h1 className="projects-title" ref={ref1}>
+        Projects
+      </h1>
       <div className="projects-wrapper">
         {projects.map((project, index) => (
-          <div ref={ref} key={index} className="project-container">
+          <div ref={ref2} key={index} className="project-container">
             <h2 className="project-title">{project.title}</h2>
             <a
               className="project-card-link"
