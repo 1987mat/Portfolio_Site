@@ -19,32 +19,18 @@ export const projects = [
     github: 'https://github.com/1987mat/Sydney_Ranee_Official',
   },
   {
-    title: 'React Resume Builder',
-    description: 'App built with React JS',
-    image: resume,
-    link: 'https://1987mat.github.io/CV_Application/',
-    github: 'https://github.com/1987mat/CV_Application',
-  },
-  {
-    title: 'React To-do List App',
-    description: 'CRUD App built with React JS',
-    image: toDoList,
-    link: 'https://1987mat.github.io/ToDoList_ReactJS',
-    github: 'https://github.com/1987mat/ToDoList_ReactJS',
-  },
-  {
-    title: 'Github Finder API App',
-    description: 'Search and display github users profile',
-    image: github,
-    link: 'https://1987mat.github.io/Github_Finder_App',
-    github: 'https://github.com/1987mat/Github_Finder_App',
-  },
-  {
     title: 'eCommerce Fashion Site',
     description: 'Custom WooCommerce theme',
     image: glamourIcon,
     link: 'https://glamouricon.org/',
     github: 'https://github.com/1987mat/Syd_Fashion_Store',
+  },
+  {
+    title: 'React Resume Builder',
+    description: 'App built with React JS',
+    image: resume,
+    link: 'https://1987mat.github.io/CV_Application/',
+    github: 'https://github.com/1987mat/CV_Application',
   },
   {
     title: 'WooCommerce Site',
@@ -54,11 +40,11 @@ export const projects = [
     github: 'https://github.com/1987mat/Sydney-Ranee-Store',
   },
   {
-    title: 'Library App',
-    description: 'CRUD App built with Vanilla JS',
-    image: library,
-    link: 'https://1987mat.github.io/LibraryApp',
-    github: 'https://github.com/1987mat/LibraryApp',
+    title: 'React To-do List App',
+    description: 'CRUD App built with React JS',
+    image: toDoList,
+    link: 'https://1987mat.github.io/ToDoList_ReactJS',
+    github: 'https://github.com/1987mat/ToDoList_ReactJS',
   },
   {
     title: 'Gym Website ',
@@ -67,6 +53,14 @@ export const projects = [
     link: 'https://www.fitwellgym.com',
     github: 'https://github.com/1987mat/FitWellGym',
   },
+  {
+    title: 'Github Finder API App',
+    description: 'Search and display github users profile',
+    image: github,
+    link: 'https://1987mat.github.io/Github_Finder_App',
+    github: 'https://github.com/1987mat/Github_Finder_App',
+  },
+
   {
     title: 'Weather App',
     description: 'Weather forecast API app',
@@ -87,5 +81,13 @@ export const projects = [
     image: origanoTrattoria,
     link: 'https://origanotrattoria.org/',
     github: 'https://github.com/1987mat/restaurant_elementor_child_theme',
+  },
+
+  {
+    title: 'Library App',
+    description: 'CRUD App built with Vanilla JS',
+    image: library,
+    link: 'https://1987mat.github.io/LibraryApp',
+    github: 'https://github.com/1987mat/LibraryApp',
   },
 ];
